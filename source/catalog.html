@@ -8,130 +8,101 @@
 
     <header class="header">
 
-      <div class="logo">
-        <a class="logo__link" href="index.html">
-          <img class="logo__image" src="#" alt="Логотип интернет-магазина вязаных вещей - Мишка">
-        </a>
-      </div>
+      <a class="logo" href="index.html">
+        <img class="logo__image" src="#" alt="Логотип интернет-магазина вязаных вещей - Мишка">
+      </a>
+
       <button class="humburger" type="button">Меню</button>
+
       <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link">Каталог товаров</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="nav__item">
-            <input class="nav__search" type="text" placeholder="Поиск по сайту">
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
+        <p class="nav__item">
+          <a class="nav__link">Каталог товаров</a>
+        </p>
+        <p class="nav__item">
+          <a class="nav__link" href="form.html">Вязание на заказ</a>
+        </p>
+        <form class="nav__item" action="https://echo.htmlacademy.ru" method="POST">
+          <input class="nav__search" type="search" placeholder="Поиск по сайту">
+        </form>
+        <p class="nav__item">
+          <a class="nav__link" href="#">Корзина: пока пуста</a>
+        </p>
       </nav>
 
     </header>
 
-    <main class="main main--catalog">
+    <main class="main">
 
       <h1 class="main__title">Каталог товаров</h1>
 
       <section class="products">
 
-        <ul class="products__list">
+        <article class="product">
+          <img class="product__image" src="#" alt="Изображение вязаной игрушки - Зайчик-попрыгайчик">
+          <h2 class="product__title">Зайчик-попрыгайчик</h2>
+          <p class="product__description">Рост 30 см, вес 200 г</p>
+          <div class="product__commerc">
+            <span class="product__price">1 200 руб.</span>
+            <a class="product__cart" href="#">
+              <img src="#" alt="Положить товар в корзину покупок">
+            </a>
+          </div>
+        </article>
 
-          <li class="products__item">
-            <article class="product">
-              <h2 class="product__title">Зайчик-попрыгайчик</h2>
-              <p class="product__desc">Рост 30 см, вес 200 г</p>
-              <div class="product__commerc">
-                <span class="product__price">1 200 руб.</span>
-                <div class="product__cart">
-                  <a class="product__cart-link" href="#">
-                    <img class="product__cart-image" src="#" alt="Изображение иконки корзины покупки товара">
-                  </a>
-                </div>
-              </div>
-              <div class="product__picture">
-                <img class="product__image" src="#" alt="Изображение вязаной игрушки - Зайчик-попрыгайчик">
-              </div>
-            </article>
-          </li>
+        <article class="product">
+          <img class="product__image" src="#" alt="Изображение вязаной корзинки для белья">
+          <h2 class="product__title">Корзинка для белья</h2>
+          <p class="product__description">Диаметр 12 см, высота 10 см</p>
+          <div class="product__commerc">
+            <span class="product__price">690 руб.</span>
+            <a class="product__cart" href="#">
+              <img src="#" alt="Положить товар в корзину покупок">
+            </a>
+          </div>
+        </article>
 
-          <li class="catalog__item">
-            <article class="product">
-              <h2 class="product__title">Корзинка для белья</h2>
-              <p class="product__desc">Диаметр 12 см, высота 10 см</p>
-              <div class="product__commerc">
-                <span class="product__price">690 руб.</span>
-                <div class="product__cart">
-                  <a class="product__cart-link" href="#">
-                    <img class="product__cart-image" src="#" alt="Изображение иконки корзины покупки товара">
-                  </a>
-                </div>
-              </div>
-              <div class="product__picture">
-                <img class="product__image" src="#" alt="Изображение вязаной корзинки для белья">
-              </div>
-            </article>
-          </li>
-
-          <li class="catalog__item">
-            <article class="product">
-              <h2 class="product__title">Большая корзинка для игрушек</h2>
-              <p class="product__desc">Диаметр 30 см, высота 30 см</p>
-              <div class="product__commerc">
-                <span class="product__price">1 500 руб.</span>
-                <div class="product__cart">
-                  <a class="product__cart-link" href="#">
-                    <img class="product__cart-image" src="#" alt="Изображение иконки корзины покупки товара">
-                  </a>
-                </div>
-              </div>
-              <div class="product__picture">
-                <img class="product__image" src="#" alt="Изображение вязаной большой корзинки для игрушек">
-              </div>
-            </article>
-          </li>
-
-        </ul>
+        <article class="product">
+          <img class="product__image" src="#" alt="Изображение вязаной большой корзинки для игрушек">
+          <h2 class="product__title">Большая корзинка для игрушек</h2>
+          <p class="product__desc">Диаметр 30 см, высота 30 см</p>
+          <div class="product__commerc">
+            <span class="product__price">1 500 руб.</span>
+            <a class="product__cart" href="#">
+              <img src="#" alt="Положить товар в корзину покупок">
+            </a>
+          </div>
+        </article>
 
       </section>
 
-      <!--Здесь будет блок, описывающий процесс производства-->
+      <section class="presentation">
+        <h2 class="presentation__title">Процесс производства</h2>
+        <video class="presentation__video" src="#"></video>
+        <p class="presentation__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="main-link main-link--presentation" href="#">Сделать заказ</a>
+      </section>
 
     </main>
 
     <footer class="footer">
 
       <div class="social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="#">
-              <img src="#" alt="Изображение иконки социальной сети Instagram">
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="#">
-              <img src="#" alt="Изображение иконки социальной сети Facebook">
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="#">
-              <img src="#" alt="Изображение иконки социальной сети Twitter">
-            </a>
-          </li>
-        </ul>
+        <a class="social__link" href="#">
+          <img class="social__icon" src="#" alt="Изображение иконки социальной сети Instagram">
+        </a>
+        <a class="social__link" href="#">
+          <img class="social__icon" src="#" alt="Изображение иконки социальной сети Facebook">
+        </a>
+        <a class="social__link" href="#">
+          <img class="social__icon" src="#" alt="Изображение иконки социальной сети Twitter">
+        </a>
       </div>
 
       <div class="web-dev">
         <p class="web-dev__text">Разработано</p>
-        <div class="web-dev__logo">
-          <a href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="#" alt="Изображение логотипа HTML Academy">
-          </a>
-        </div>
+        <a class="web-dev__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="#" alt="Изображение логотипа HTML Academy">
+        </a>
       </div>
 
     </footer>
