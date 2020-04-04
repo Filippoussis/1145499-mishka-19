@@ -1,0 +1,32 @@
+.nav__item {
+  min-height: 79px;
+  border-bottom: 1px solid #ececec;
+}
+
+.nav__link {
+  display: flex;
+  align-items: center;
+  padding-left: 15%;
+  font-size: 17px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.nav__header {
+  &::before {
+    content: "";
+    width: 20px;
+    height: 14px;
+  }
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__search {
+  &::placeholder {
+    color: #000000;
+  }
+
+  border: none;
+}

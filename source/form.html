@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
     <title>Интернет-магазина вязаных вещей - Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
+  <body class="page">
 
     <header class="header">
 
-      <a class="logo" href="index.html">
-        <img class="logo__image" src="#" alt="Логотип интернет-магазина вязаных вещей - Мишка">
-      </a>
-
-      <button class="humburger" type="button">Меню</button>
-
       <nav class="nav">
-        <p class="nav__item">
-          <a class="nav__link" href="catalog.html">Каталог товаров</a>
-        </p>
-        <p class="nav__item">
-          <a class="nav__link">Вязание на заказ</a>
-        </p>
+        <div class="nav__header nav__item">
+          <a class="logo" href="index.html">
+            <img class="logo__image" src="../img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина вязаных вещей - Мишка">
+          </a>
+          <button class="humburger" type="button">Меню</button>
+        </div>
+
+        <a class="nav__link nav__item" href="catalog.html">Каталог товаров</a>
+
+        <a class="nav__link nav__item">Вязание на заказ</a>
+
         <form class="nav__item" action="https://echo.htmlacademy.ru" method="POST">
           <input class="nav__search" type="search" placeholder="Поиск по сайту">
         </form>
-        <p class="nav__item">
-          <a class="nav__link" href="#">Корзина: пока пуста</a>
-        </p>
+
+        <a class="nav__link nav__item" href="#">Корзина: пока пуста</a>
       </nav>
+
+      <div class="header__face header__face--form">
+        <h1 class="header__title">Вязание на заказ</h1>
+      </div>
 
     </header>
 
     <main class="main">
 
-      <h1 class="main__title">Вязание на заказ</h1>
       <p class="main__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
       <form class="form" action="https://echo.htmlacademy.ru" method="POST">
@@ -119,29 +122,43 @@
     </main>
 
     <footer class="footer">
+      <div class="footer__wrapper">
 
-      <div class="social">
-        <a class="social__link" href="#">
-          <img class="social__icon" src="#" alt="Изображение иконки социальной сети Instagram">
-        </a>
-        <a class="social__link" href="#">
-          <img class="social__icon" src="#" alt="Изображение иконки социальной сети Facebook">
-        </a>
-        <a class="social__link" href="#">
-          <img class="social__icon" src="#" alt="Изображение иконки социальной сети Twitter">
-        </a>
-      </div>
-
-      <div class="web-dev">
-        <p class="web-dev__text">Разработано</p>
-        <div class="web-dev__logo">
-          <a href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="#" alt="Изображение логотипа HTML Academy">
+        <div class="social">
+          <a class="social__link" href="#">
+            <svg class="social__icon" width="22" height="21">
+              <use xlink:href="#icon-insta"></use>
+            </svg>
+          </a>
+          <a class="social__link" href="#">
+            <svg class="social__icon" width="15" height="28">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
+          </a>
+          <a class="social__link" href="#">
+            <svg class="social__icon" width="23" height="20">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
           </a>
         </div>
-      </div>
 
+        <div class="web-dev">
+          <p class="web-dev__text">Разработано</p>
+          <div class="web-dev__logo">
+            <a href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="web-dev__icon" width="27" height="34">
+                <use xlink:href="#icon-htmlacademy"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
     </footer>
+
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
   </body>
 </html>

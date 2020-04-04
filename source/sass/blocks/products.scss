@@ -1,0 +1,31 @@
+.products {
+  margin-bottom: 40px;
+}
+
+.products__wrapper {
+  padding: 0 30px;
+}
+
+.products__title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.products__description {
+  font-size: 13px;
+}
+
+.products__price {
+  font-weight: 700;
+  color: #000000;
+}
+
+.products__item {
+  outline: 1px solid #ececec;
+}
+
+.products__item:not(:last-child) {
+  margin-bottom: 40px;
+}

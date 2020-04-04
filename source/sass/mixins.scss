@@ -1,0 +1,17 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin tablet-wrapper {
+  width: 768px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+@mixin desktop-wrapper {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
