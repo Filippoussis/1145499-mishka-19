@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   min-width: 320px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
@@ -7,11 +8,17 @@ body {
   color: #444;
 }
 
+main {
+  display: block;
+}
+
 img {
   max-width: 100%;
   height: auto;
+  border-style: none;
 }
 
 a {
   text-decoration: none;
+  background-color: transparent;
 }
