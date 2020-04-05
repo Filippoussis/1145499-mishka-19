@@ -1,0 +1,15 @@
+.products-group__link {
+  &--interior {
+    background-color: $main-green;
+  }
+
+  &--toys {
+    background-color: #56c3b2;
+  }
+
+  display: block;
+  min-height: 101px;
+  font-size: 19px;
+  font-weight: 700;
+  color: #ffffff;
+}

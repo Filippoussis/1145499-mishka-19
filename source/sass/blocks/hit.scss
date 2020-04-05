@@ -1,0 +1,28 @@
+.hit {
+  margin-bottom: 40px;
+}
+
+.hit__wrapper {
+  padding: 0 30px;
+}
+
+.hit__title {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.hit__lable {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $main-green;
+}
+
+.hit__price {
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+}

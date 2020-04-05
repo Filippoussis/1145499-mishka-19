@@ -1,0 +1,28 @@
+.features {
+  margin-bottom: 40px;
+}
+
+.features__wrapper {
+  padding: 0 30px;
+}
+
+.features__title {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.features__list {
+  @include list-reset;
+}
+
+.features__item {
+  font-size: 17px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 40px;
+}
