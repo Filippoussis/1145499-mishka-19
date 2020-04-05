@@ -1,0 +1,22 @@
+.form {
+  margin-bottom: 55px;
+}
+
+.form__fieldset {
+  margin: 0 0 20px;
+  padding: 0;
+  border: none;
+}
+
+.form__legend {
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $main-green;
+}
+
+.form__label {
+  font-size: 17px;
+  font-weight: 700;
+  color: #000000;
+}

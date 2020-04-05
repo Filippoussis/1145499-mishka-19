@@ -1,18 +1,24 @@
-html {
-  box-sizing: border-box;
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: #444444;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+main {
+  display: block;
 }
 
 img {
   max-width: 100%;
   height: auto;
+  border-style: none;
 }
 
 a {
   text-decoration: none;
+  background-color: transparent;
 }

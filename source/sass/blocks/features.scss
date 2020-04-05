@@ -3,11 +3,10 @@
 }
 
 .features__wrapper {
-  padding: 0 30px;
+  @include mobile-wrapper;
 }
 
 .features__title {
-  margin: 0;
   font-size: 25px;
   font-weight: 700;
   color: #000000;

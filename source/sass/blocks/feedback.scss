@@ -3,24 +3,23 @@
 }
 
 .feedback__wrapper {
-  padding: 0 30px;
+  @include mobile-wrapper;
 }
 
 .feedback__title {
-  margin: 0;
   font-size: 25px;
   font-weight: 700;
   color: #000000;
 }
 
 .feedback__author {
+  margin-bottom: 35px;
+  font-size: 17px;
+
   &--name {
     font-weight: 700;
     color: #000000;
   }
-
-  margin-bottom: 35px;
-  font-size: 17px;
 }
 
 .feedback__author p {
