@@ -13,20 +13,20 @@
 }
 
 .nav__header {
+  display: flex;
+  justify-content: space-between;
+
   &::before {
     content: "";
     width: 20px;
     height: 14px;
   }
-
-  display: flex;
-  justify-content: space-between;
 }
 
 .nav__search {
+  border: none;
+
   &::placeholder {
     color: #000000;
   }
-
-  border: none;
 }

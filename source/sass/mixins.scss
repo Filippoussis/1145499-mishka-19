@@ -1,7 +1,11 @@
 @mixin list-reset {
-  margin: 0;
-  padding: 0;
+  padding-left: 0;
   list-style: none;
+}
+
+@mixin mobile-wrapper {
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 @mixin tablet-wrapper {

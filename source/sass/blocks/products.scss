@@ -3,14 +3,13 @@
 }
 
 .products__wrapper {
-  padding: 0 30px;
+  @include mobile-wrapper;
 }
 
 .products__title {
-  margin: 0;
   font-size: 17px;
   font-weight: 700;
-  color: #000000;
+  color: #000;
 }
 
 .products__description {
@@ -19,7 +18,7 @@
 
 .products__price {
   font-weight: 700;
-  color: #000000;
+  color: #000;
 }
 
 .products__item {

@@ -3,18 +3,16 @@
 }
 
 .hit__wrapper {
-  padding: 0 30px;
+  @include mobile-wrapper;
 }
 
 .hit__title {
-  margin: 0;
   font-size: 25px;
   font-weight: 700;
-  color: #000000;
+  color: #000;
 }
 
 .hit__lable {
-  margin: 0;
   font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;

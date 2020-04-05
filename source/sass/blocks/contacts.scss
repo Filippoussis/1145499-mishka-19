@@ -3,15 +3,14 @@
 }
 
 .contacts__wrapper {
-  padding: 0 30px;
+  @include mobile-wrapper;
 }
 
 .contacts__title {
-  margin: 0;
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 700;
-  color: #000000;
+  color: #000;
 }
 
 .contacts__info {
