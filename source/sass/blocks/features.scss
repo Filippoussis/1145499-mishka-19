@@ -3,13 +3,13 @@
 }
 
 .features__wrapper {
-  @include mobile-wrapper
+  @include mobile-wrapper;
 }
 
 .features__title {
   font-size: 25px;
   font-weight: 700;
-  color: #000;
+  color: #000000;
 }
 
 .features__list {
@@ -19,7 +19,7 @@
 .features__item {
   font-size: 17px;
   font-weight: 700;
-  color: #000;
+  color: #000000;
 }
 
 .features__item:not(:last-child) {
