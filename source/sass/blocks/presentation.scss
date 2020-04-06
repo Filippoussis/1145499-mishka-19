@@ -3,7 +3,7 @@
 }
 
 .presentation__wrapper {
-  @include mobile-wrapper;
+  @include wrapper;
 }
 
 .presentation__title {

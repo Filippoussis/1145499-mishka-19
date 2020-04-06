@@ -3,7 +3,7 @@
 }
 
 .contacts__wrapper {
-  @include mobile-wrapper;
+  @include wrapper;
 }
 
 .contacts__title {
