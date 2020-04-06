@@ -10,25 +10,36 @@
   <body>
 
     <header class="header">
+      <div class="header__wrapper">
 
-      <nav class="nav">
-        <div class="nav__header nav__item">
-          <a class="logo" href="index.html">
-            <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина вязаных вещей - Мишка">
-          </a>
-          <button class="humburger" type="button">Меню</button>
-        </div>
+        <button class="humburger" type="button">Меню</button>
 
-        <a class="nav__link nav__item">Каталог товаров</a>
+        <nav class="nav">
 
-        <a class="nav__link nav__item" href="form.html">Вязание на заказ</a>
+          <div class="nav__logo nav__item">
+            <a href="index.html">
+              <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина вязаных вещей - Мишка">
+            </a>
+          </div>
 
-        <form class="nav__item" action="https://echo.htmlacademy.ru" method="POST">
-          <input class="nav__search" type="search" placeholder="Поиск по сайту">
-        </form>
+          <a class="nav__catalog nav__link nav__item">Каталог товаров</a>
 
-        <a class="nav__link nav__item" href="#">Корзина: пока пуста</a>
-      </nav>
+          <a class="nav__order nav__link nav__item" href="form.html">Вязание на заказ</a>
+
+          <form class="nav__search nav__item" action="https://echo.htmlacademy.ru" method="POST">
+            <input type="search" placeholder="Поиск по сайту">
+          </form>
+
+          <a class="nav__cart nav__link nav__item" href="#">Корзина: пока пуста</a>
+
+          <div class="nav__options">
+            <a class="nav__link nav__sale" href="#">Распродажа</a>
+            <a class="nav__link nav__new" href="#">Новые поступления</a>
+            <span class="nav__delivery">Бесплатная доставка по России</span>
+          </div>
+
+        </nav>
+      </div>
 
       <div class="header__face header__face--catalog">
         <h1 class="header__title">Каталог товаров</h1>
