@@ -29,8 +29,15 @@
   margin-bottom: 40px;
 }
 
-@media (min-width: $tablet-width) {
+@media (max-width: $tablet-width-only) {
   .products__item {
     display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products__wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 }
