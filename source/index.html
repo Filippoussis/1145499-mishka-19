@@ -97,14 +97,19 @@
         <div class="features__wrapper">
 
           <h2 class="features__title">Коротко о нас</h2>
-          <ul class="features__list">
-            <li class="features__item features__item--1">Экологически чистые материалы</li>
-            <li class="features__item features__item--2">Скандинавский стиль по российской цене</li>
-            <li class="features__item features__item--3">Увеличивает лайки на фотографиях</li>
-            <li class="features__item features__item--4">Связано в ручную с любовью и умилением</li>
-            <li class="features__item features__item--5">Поддержка отечественного производителя</li>
-            <li class="features__item features__item--6">Поставляется в подарочной упаковке</li>
-          </ul>
+
+          <div class="features__list">
+            <div class="features__column">
+              <p class="features__item features__item--1">Экологически чистые материалы</p>
+              <p class="features__item features__item--2">Скандинавский стиль по российской цене</p>
+              <p class="features__item features__item--3">Увеличивает лайки на фотографиях</p>
+            </div>
+            <div class="features__column">
+              <p class="features__item features__item--4">Связано в ручную с любовью и умилением</p>
+              <p class="features__item features__item--5">Поддержка отечественного производителя</p>
+              <p class="features__item features__item--6">Поставляется в подарочной упаковке</p>
+            </div>
+          </div>
 
         </div>
       </section>
@@ -165,6 +170,11 @@
 
     <footer class="footer">
       <div class="footer__wrapper">
+
+        <a class="footer__logo" href="#">
+          <img src="img/logo-footer.svg" width="102" height="34" alt="Логотип интернет-магазина вязаных вещей - Мишка">
+        </a>
+
         <div class="social">
           <a class="social__link" href="#">
             <svg class="social__icon" width="22" height="21">
@@ -184,7 +194,7 @@
         </div>
 
         <div class="web-dev">
-          <p class="web-dev__text">Разработано</p>
+          <span class="web-dev__text">Разработано</span>
           <a class="web-dev__logo" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="web-dev__icon" width="27" height="34">
               <use xlink:href="#icon-htmlacademy"></use>

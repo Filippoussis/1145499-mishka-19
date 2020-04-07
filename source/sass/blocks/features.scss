@@ -12,16 +12,19 @@
   color: #000000;
 }
 
-.features__list {
-  @include list-reset;
-}
-
 .features__item {
   font-size: 17px;
   font-weight: 700;
   color: #000000;
 }
 
-.features__item:not(:last-child) {
-  margin-bottom: 40px;
+@media (min-width: $tablet-width) {
+  .features__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .features__column {
+    width: 40%;
+  }
 }

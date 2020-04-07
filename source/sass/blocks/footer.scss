@@ -6,3 +6,9 @@
 .footer__wrapper {
   @include wrapper;
 }
+
+@media (max-width: $mobile-width-only) {
+  .footer__logo {
+    display: none;
+  }
+}
