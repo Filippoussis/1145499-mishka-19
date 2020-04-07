@@ -1,8 +1,3 @@
-@mixin list-reset {
-  padding-left: 0;
-  list-style: none;
-}
-
 @mixin wrapper {
   margin: 0 auto;
   padding: 0 30px;
@@ -15,16 +10,4 @@
   @media (min-width: $desktop-width) {
     width: 1150px;
   }
-}
-
-@mixin tablet-wrapper {
-  width: 768px;
-  margin: 0 auto;
-  padding: 0 40px;
-}
-
-@mixin desktop-wrapper {
-  width: 1440px;
-  margin: 0 auto;
-  padding: 0 60px;
 }

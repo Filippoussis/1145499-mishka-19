@@ -28,3 +28,9 @@
 .products__item:not(:last-child) {
   margin-bottom: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .products__item {
+    display: flex;
+  }
+}
