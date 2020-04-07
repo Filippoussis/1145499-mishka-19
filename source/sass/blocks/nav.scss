@@ -1,5 +1,4 @@
 @media (max-width: $mobile-width-only) {
-
   .nav__item {
     min-height: 79px;
     border-bottom: 1px solid #ececec;
@@ -47,7 +46,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .nav {
     display: flex;
     flex-wrap: wrap;
@@ -62,7 +60,7 @@
     order: 5;
   }
 
-  .nav__catalog{
+  .nav__catalog {
     order: 4;
   }
 
@@ -72,12 +70,11 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .nav__order {
     order: -1;
   }
 
-  .nav__catalog{
+  .nav__catalog {
     order: -2;
   }
 
@@ -93,5 +90,4 @@
   .nav__logo {
     width: 40%;
   }
-
 }
