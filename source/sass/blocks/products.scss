@@ -3,7 +3,7 @@
 }
 
 .products__wrapper {
-  @include mobile-wrapper;
+  @include wrapper;
 }
 
 .products__title {
@@ -27,4 +27,17 @@
 
 .products__item:not(:last-child) {
   margin-bottom: 40px;
+}
+
+@media (max-width: $tablet-width-only) {
+  .products__item {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }

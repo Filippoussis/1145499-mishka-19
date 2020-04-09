@@ -3,7 +3,7 @@
 }
 
 .feedback__wrapper {
-  @include mobile-wrapper;
+  @include wrapper;
 }
 
 .feedback__title {

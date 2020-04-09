@@ -1,3 +1,17 @@
+.products-group {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+  }
+}
+
 .products-group__link {
   display: block;
   min-height: 101px;
@@ -11,5 +25,9 @@
 
   &--toys {
     background-color: #56c3b2;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
   }
 }

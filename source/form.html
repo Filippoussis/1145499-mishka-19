@@ -11,24 +11,36 @@
 
     <header class="header">
 
-      <nav class="nav">
-        <div class="nav__header nav__item">
-          <a class="logo" href="index.html">
-            <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина вязаных вещей - Мишка">
-          </a>
-          <button class="humburger" type="button">Меню</button>
-        </div>
+      <div class="header__wrapper">
 
-        <a class="nav__link nav__item" href="catalog.html">Каталог товаров</a>
+        <button class="humburger" type="button">Меню</button>
 
-        <a class="nav__link nav__item">Вязание на заказ</a>
+        <nav class="nav">
 
-        <form class="nav__item" action="https://echo.htmlacademy.ru" method="POST">
-          <input class="nav__search" type="search" placeholder="Поиск по сайту">
-        </form>
+          <div class="nav__logo nav__item">
+            <a href="index.html">
+              <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина вязаных вещей - Мишка">
+            </a>
+          </div>
 
-        <a class="nav__link nav__item" href="#">Корзина: пока пуста</a>
-      </nav>
+          <a class="nav__catalog nav__link nav__item " href="catalog.html">Каталог товаров</a>
+
+          <a class="nav__order nav__link nav__item">Вязание на заказ</a>
+
+          <form class="nav__search nav__item" action="https://echo.htmlacademy.ru" method="POST">
+            <input type="search" placeholder="Поиск по сайту">
+          </form>
+
+          <a class="nav__cart nav__link nav__item" href="#">Корзина: пока пуста</a>
+
+          <div class="nav__options">
+            <a class="nav__link nav__sale" href="#">Распродажа</a>
+            <a class="nav__link nav__new" href="#">Новые поступления</a>
+            <span class="nav__delivery">Бесплатная доставка по России</span>
+          </div>
+
+        </nav>
+      </div>
 
       <div class="header__face header__face--form">
         <h1 class="header__title">Вязание на заказ</h1>
@@ -116,7 +128,7 @@
 
           <p class="form__note">Поля обязательные к заполнению*</p>
 
-          <button class="main-link main-link--order">Отправить заказ</button>
+          <button type="submit" class="main-link main-link--order">Отправить заказ</button>
 
         </form>
 
@@ -125,6 +137,10 @@
 
     <footer class="footer">
       <div class="footer__wrapper">
+
+        <a class="footer__logo" href="#">
+          <img src="img/logo-footer.svg" width="102" height="34" alt="Логотип интернет-магазина вязаных вещей - Мишка">
+        </a>
 
         <div class="social">
           <a class="social__link" href="#">
@@ -145,14 +161,12 @@
         </div>
 
         <div class="web-dev">
-          <p class="web-dev__text">Разработано</p>
-          <div class="web-dev__logo">
-            <a href="https://htmlacademy.ru/intensive/adaptive">
-              <svg class="web-dev__icon" width="27" height="34">
-                <use xlink:href="#icon-htmlacademy"></use>
-              </svg>
-            </a>
-          </div>
+          <span class="web-dev__text">Разработано</span>
+          <a class="web-dev__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="web-dev__icon" width="27" height="34">
+              <use xlink:href="#icon-htmlacademy"></use>
+            </svg>
+          </a>
         </div>
 
       </div>

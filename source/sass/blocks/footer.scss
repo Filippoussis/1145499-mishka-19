@@ -4,5 +4,18 @@
 }
 
 .footer__wrapper {
-  @include mobile-wrapper;
+  @include wrapper;
+}
+
+@media (max-width: $mobile-width-only) {
+  .footer__logo {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
