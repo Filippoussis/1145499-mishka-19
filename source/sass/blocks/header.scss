@@ -2,10 +2,6 @@
   margin-bottom: 40px;
 }
 
-.header__wrapper {
-  @include wrapper;
-}
-
 .header__face {
   min-height: 283px;
   background-image: url("../img/hero-mobile@1x.jpg");

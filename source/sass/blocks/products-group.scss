@@ -1,19 +1,5 @@
-.products-group {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    width: 768px;
-    margin: 0 auto;
-    padding: 0 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1150px;
-  }
-}
-
 .products-group__link {
-  display: block;
+  display: flex;
   min-height: 101px;
   font-size: 19px;
   font-weight: 700;
@@ -26,8 +12,16 @@
   &--toys {
     background-color: #56c3b2;
   }
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .products-group__wrapper {
+    @include wrapper;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .products-group__link {
     width: 50%;
   }
 }
