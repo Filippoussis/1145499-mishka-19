@@ -11,36 +11,33 @@
 
     <header class="header">
 
-      <div class="header__wrapper">
+      <nav class="nav">
+        <div class="nav__wrapper">
 
-        <button class="humburger" type="button">Меню</button>
+          <button class="humburger" type="button">Меню</button>
 
-        <nav class="nav">
-
-          <div class="nav__logo nav__item">
-            <a href="index.html">
+          <div class="nav__item nav__item--header">
+            <a class="nav__logo" href="index.html">
               <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина вязаных вещей - Мишка">
             </a>
           </div>
 
-          <a class="nav__catalog nav__link nav__item " href="catalog.html">Каталог товаров</a>
+          <a class="nav__item nav__item--catalog" href="catalog.html">Каталог товаров</a>
 
-          <a class="nav__order nav__link nav__item">Вязание на заказ</a>
+          <a class="nav__item nav__item--order">Вязание на заказ</a>
 
-          <form class="nav__search nav__item" action="https://echo.htmlacademy.ru" method="POST">
-            <input type="search" placeholder="Поиск по сайту">
+          <form class="nav__item" action="https://echo.htmlacademy.ru" method="POST">
+            <input class="nav__input" type="search" placeholder="Поиск по сайту">
           </form>
 
-          <a class="nav__cart nav__link nav__item" href="#">Корзина: пока пуста</a>
+          <a class="nav__item" href="#">Корзина: пока пуста</a>
 
-          <div class="nav__options">
-            <a class="nav__link nav__sale" href="#">Распродажа</a>
-            <a class="nav__link nav__new" href="#">Новые поступления</a>
-            <span class="nav__delivery">Бесплатная доставка по России</span>
-          </div>
+          <a class="nav__item nav__item--sale" href="#">Распродажа</a>
+          <a class="nav__item nav__item--new" href="#">Новые поступления</a>
+          <span class="nav__item nav__item--delivery">Бесплатная доставка по России</span>
 
-        </nav>
-      </div>
+        </div>
+      </nav>
 
       <div class="header__face header__face--form">
         <h1 class="header__title">Вязание на заказ</h1>
