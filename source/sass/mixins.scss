@@ -11,3 +11,8 @@
     width: 1050px;
   }
 }
+
+@mixin reset-list {
+  padding-left: 0;
+  list-style: none;
+}
