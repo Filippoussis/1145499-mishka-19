@@ -52,76 +52,88 @@
 
         <form class="form" action="https://echo.htmlacademy.ru" method="POST">
 
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Тип</legend>
-            <label class="form__label">
-              <input type="radio" name="type" value="interior" checked>
-              <span>Аксессуар для интерьера</span>
-            </label>
-            <label class="form__label">
-              <input type="radio" name="type" value="toys">
-              <span>Детская игрушка</span>
-            </label>
-          </fieldset>
+          <div class="form__fieldset">
+            <p class="form__legend">Тип</p>
+            <div class="form__wrapper form__wrapper--type">
+              <label class="form__label">
+                <input type="radio" name="type" value="interior" checked>
+                <span>Аксессуар для интерьера</span>
+              </label>
+              <label class="form__label">
+                <input type="radio" name="type" value="toys">
+                <span>Детская игрушка</span>
+              </label>
+            </div>
+          </div>
 
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Цвет</legend>
-            <label class="form__label">
-              <input type="checkbox" name="white" checked>
-              <span>Белый</span>
-            </label>
-            <label class="form__label">
-              <input type="checkbox" name="gray" checked>
-              <span>Серый</span>
-            </label>
-            <label class="form__label">
-              <input type="checkbox" name="tiffany">
-              <span>«Тиффани»</span>
-            </label>
-            <label class="form__label">
-              <input type="checkbox" name="black">
-              <span>Чёрный</span>
-            </label>
-            <label class="form__label">
-              <input type="checkbox" name="pink">
-              <span>Розовый</span>
-            </label>
-            <label class="form__label">
-              <input type="checkbox" name="orange">
-              <span>Оранжевый</span>
-            </label>
-          </fieldset>
+          <div class="form__fieldset">
+            <p class="form__legend">Цвет</p>
+            <div class="form__wrapper form__wrapper--color">
+              <label class="form__label form__label--white">
+                <input type="checkbox" name="white" checked>
+                <span>Белый</span>
+              </label>
+              <label class="form__label form__label--gray">
+                <input type="checkbox" name="gray" checked>
+                <span>Серый</span>
+              </label>
+              <label class="form__label form__label--tiffany">
+                <input type="checkbox" name="tiffany">
+                <span>«Тиффани»</span>
+              </label>
+              <label class="form__label form__label--black">
+                <input type="checkbox" name="black">
+                <span>Чёрный</span>
+              </label>
+              <label class="form__label form__label--pink">
+                <input type="checkbox" name="pink">
+                <span>Розовый</span>
+              </label>
+              <label class="form__label form__label--orange">
+                <input type="checkbox" name="orange">
+                <span>Оранжевый</span>
+              </label>
+            </div>
+          </div>
 
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">ФИО</legend>
-            <label class="form__label">
-              <span>Имя:</span>
-              <input type="text" placeholder="Введите ваше имя*">
-            </label>
-            <label class="form__label">
-              <span>Фамилия:</span>
-              <input type="text" placeholder="Укажите фамилию*">
-            </label>
-            <label class="form__label">
-              <span>Отчество:</span>
-              <input type="text" placeholder="Отчество, если желаете">
-            </label>
-          </fieldset>
+          <div class="form__fieldset">
+            <p class="form__legend">ФИО</p>
+            <div class="form__wrapper form__wrapper--name">
+              <label class="form__label">
+                <span>Имя:</span>
+                <input type="text" placeholder="Введите ваше имя*">
+              </label>
+              <label class="form__label">
+                <span>Фамилия:</span>
+                <input type="text" placeholder="Укажите фамилию*">
+              </label>
+              <label class="form__label">
+                <span>Отчество:</span>
+                <input type="text" placeholder="Отчество, если желаете">
+              </label>
+            </div>
+          </div>
 
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Тел</legend>
-            <input type="tel" placeholder="+7 XXX XXX XX XX*">
-          </fieldset>
+          <div class="form__fieldset">
+            <p class="form__legend">Тел</p>
+            <div class="form__wrapper form__wrapper--tel">
+              <input type="tel" placeholder="+7 XXX XXX XX XX*">
+             </div>
+          </div>
 
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">E-mail</legend>
-            <input type="email" placeholder="Ваш Email*">
-          </fieldset>
+          <div class="form__fieldset">
+            <p class="form__legend">E-mail</p>
+            <div class="form__wrapper form__wrapper--email">
+              <input type="email" placeholder="Ваш Email*">
+            </div>
+          </div>
 
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Доп</legend>
-            <textarea rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          </fieldset>
+          <div class="form__fieldset">
+            <p class="form__legend">Доп</p>
+            <div class="form__wrapper form__wrapper--addition">
+              <textarea rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
+          </div>
 
           <p class="form__note">Поля обязательные к заполнению*</p>
 
