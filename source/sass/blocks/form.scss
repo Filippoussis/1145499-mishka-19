@@ -3,9 +3,9 @@
 }
 
 .form__fieldset {
-  margin: 0 0 20px;
-  padding: 0;
-  border: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
 }
 
 .form__legend {
@@ -19,4 +19,49 @@
   font-size: 17px;
   font-weight: 700;
   color: #000000;
+}
+
+@media (max-width: $mobile-width-only) {
+  .form__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__legend {
+    position: absolute;
+  }
+
+  .form__fieldset {
+    flex-direction: row;
+  }
+
+  .form__wrapper {
+    display: flex;
+    width: 80%;
+    padding-left: 80px;
+
+    &--type {
+      flex-direction: column;
+    }
+
+    &--name {
+      flex-direction: column;
+    }
+
+    &--color {
+      flex-wrap: wrap;
+    }
+  }
+
+  .form__wrapper--color label {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper--color label {
+    width: 30%;
+  }
 }

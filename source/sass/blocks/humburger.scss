@@ -1,0 +1,10 @@
+.humburger {
+  position: absolute;
+  right: 9%;
+}
+
+@media (min-width: $tablet-width) {
+  .humburger {
+    display: none;
+  }
+}

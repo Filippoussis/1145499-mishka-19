@@ -12,7 +12,12 @@
   color: #000000;
 }
 
+.features__list {
+  @include reset-list;
+}
+
 .features__item {
+  margin-bottom: 20px;
   font-size: 17px;
   font-weight: 700;
   color: #000000;
@@ -21,10 +26,35 @@
 @media (min-width: $tablet-width) {
   .features__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .features__column {
+  .features__item {
     width: 40%;
+
+    &--eco-material {
+      order: 1;
+    }
+
+    &--hand-made {
+      order: 2;
+    }
+
+    &--scandinavia-style {
+      order: 3;
+    }
+
+    &--import-substitution {
+      order: 4;
+    }
+
+    &--boost-likes {
+      order: 5;
+    }
+
+    &--gift-box {
+      order: 6;
+    }
   }
 }

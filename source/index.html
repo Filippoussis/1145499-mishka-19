@@ -10,44 +10,44 @@
   <body>
 
     <header class="header">
-      <div class="header__wrapper">
 
-        <button class="humburger" type="button">Меню</button>
+      <nav class="nav">
+        <div class="nav__wrapper">
 
-        <nav class="nav">
+          <button class="humburger" type="button">Меню</button>
 
-          <div class="nav__logo nav__item">
-            <a>
+          <div class="nav__item nav__item--header">
+            <a class="nav__logo">
               <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина вязаных вещей - Мишка">
             </a>
           </div>
 
-          <a class="nav__catalog nav__link nav__item " href="catalog.html">Каталог товаров</a>
+          <a class="nav__item nav__item--catalog" href="catalog.html">Каталог товаров</a>
 
-          <a class="nav__order nav__link nav__item" href="form.html">Вязание на заказ</a>
+          <a class="nav__item nav__item--order" href="form.html">Вязание на заказ</a>
 
-          <form class="nav__search nav__item" action="https://echo.htmlacademy.ru" method="POST">
-            <input type="search" placeholder="Поиск по сайту">
+          <form class="nav__item" action="https://echo.htmlacademy.ru" method="POST">
+            <input class="nav__input" type="search" placeholder="Поиск по сайту">
           </form>
 
-          <a class="nav__cart nav__link nav__item" href="#">Корзина: пока пуста</a>
+          <a class="nav__item" href="#">Корзина: пока пуста</a>
 
-          <div class="nav__options">
-            <a class="nav__link nav__sale" href="#">Распродажа</a>
-            <a class="nav__link nav__new" href="#">Новые поступления</a>
-            <span class="nav__delivery">Бесплатная доставка по России</span>
-          </div>
+          <a class="nav__item nav__item--sale" href="#">Распродажа</a>
+          <a class="nav__item nav__item--new" href="#">Новые поступления</a>
+          <span class="nav__item nav__item--delivery">Бесплатная доставка по России</span>
 
-        </nav>
-      </div>
+        </div>
+      </nav>
 
       <div class="header__face">
         <h1 class="header__title">Милые штуки ручной работы для дома</h1>
       </div>
 
       <div class="products-group">
-        <a class="products-group__link products-group__link--interior" href="#">Предметы интерьера</a>
-        <a class="products-group__link products-group__link--toys" href="#">Детские игрушки</a>
+        <div class="products-group__wrapper">
+          <a class="products-group__link products-group__link--interior" href="#">Предметы интерьера</a>
+          <a class="products-group__link products-group__link--toys" href="#">Детские игрушки</a>
+        </div>
       </div>
 
     </header>
@@ -98,18 +98,14 @@
 
           <h2 class="features__title">Коротко о нас</h2>
 
-          <div class="features__list">
-            <div class="features__column">
-              <p class="features__item features__item--1">Экологически чистые материалы</p>
-              <p class="features__item features__item--2">Скандинавский стиль по российской цене</p>
-              <p class="features__item features__item--3">Увеличивает лайки на фотографиях</p>
-            </div>
-            <div class="features__column">
-              <p class="features__item features__item--4">Связано в ручную с любовью и умилением</p>
-              <p class="features__item features__item--5">Поддержка отечественного производителя</p>
-              <p class="features__item features__item--6">Поставляется в подарочной упаковке</p>
-            </div>
-          </div>
+          <ul class="features__list">
+            <li class="features__item features__item--eco-material">Экологически чистые материалы</li>
+            <li class="features__item features__item--scandinavia-style">Скандинавский стиль по российской цене</li>
+            <li class="features__item features__item--boost-likes">Увеличивает лайки на фотографиях</li>
+            <li class="features__item features__item--hand-made">Связано в ручную с любовью и умилением</li>
+            <li class="features__item features__item--import-substitution">Поддержка отечественного производителя</li>
+            <li class="features__item features__item--gift-box">Поставляется в подарочной упаковке</li>
+          </ul>
 
         </div>
       </section>

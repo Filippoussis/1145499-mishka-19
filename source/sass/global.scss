@@ -19,5 +19,9 @@ img {
 
 a {
   text-decoration: none;
-  background-color: transparent;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 5px 5px $main-green;
 }

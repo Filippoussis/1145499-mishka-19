@@ -2,92 +2,114 @@
   .nav__item {
     min-height: 79px;
     border-bottom: 1px solid #ececec;
+
+    &--header {
+      justify-content: center;
+    }
   }
 
-  .nav__item:first-child {
-    display: flex;
-    justify-content: center;
-  }
-
-  .nav__link {
+  .nav__item:not(.nav__item--header) {
     padding-left: 15%;
+    padding-right: 15%;
   }
+}
 
-  .nav__options {
+.nav__item {
+  display: flex;
+  font-size: 17px;
+  font-weight: 700;
+  color: #000000;
+
+  &--delivery,
+  &--new,
+  &--sale {
     display: none;
   }
 }
 
-.nav__link {
-  display: flex;
+.nav__item:not(.nav__item--header) {
   align-items: center;
-  font-size: 17px;
-  font-weight: 700;
-  color: #000000;
 }
 
-.nav__logo a {
+.nav__logo {
   display: flex;
 }
 
-.nav__search input {
+.nav__input {
+  margin: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border: none;
+  font-size: 15px;
+  color: #444444;
+  appearance: none;
+
+  // &::-webkit-search-decoration {
+  //   -webkit-appearance: none;
+  // } линтер ругается, а как убрать в Сафари отступ у плейcхолдера по другому не могу найти
 
   &::placeholder {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1;
     color: #000000;
   }
 }
 
-@media (max-width: $tablet-width-only) {
-  .nav__sale,
-  .nav__new {
-    display: none;
-  }
+.nav__input:focus::placeholder {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
-  .nav {
+  .nav__wrapper {
+    @include wrapper;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .nav__options {
-    order: 1000;
-  }
+  .nav__item {
+    &--delivery {
+      display: flex;
+      font-size: 15px;
+      font-weight: 400;
+      order: 1000;
+    }
 
-  .nav__order {
-    order: 5;
-  }
+    &--order {
+      font-size: 15px;
+      font-weight: 700;
+      order: 5;
+    }
 
-  .nav__catalog {
-    order: 4;
-  }
+    &--catalog {
+      font-size: 15px;
+      font-weight: 700;
+      order: 4;
+    }
 
-  .nav__logo {
-    width: 50%;
+    &--header {
+      width: 35%;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .nav__order {
-    order: -1;
-  }
+  .nav__item {
+    &--order {
+      order: -1;
+    }
 
-  .nav__catalog {
-    order: -2;
-  }
+    &--catalog {
+      order: -2;
+    }
 
-  .nav__options {
-    width: 100%;
-    display: flex;
-  }
-
-  .nav__delivery {
-    margin-left: auto;
-  }
-
-  .nav__logo {
-    width: 40%;
+    &--new,
+    &--sale {
+      display: flex;
+      font-size: 15px;
+      font-weight: 700;
+    }
   }
 }
