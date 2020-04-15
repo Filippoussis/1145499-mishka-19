@@ -45,9 +45,9 @@
   color: #444444;
   appearance: none;
 
-  // &::-webkit-search-decoration {
-  //   -webkit-appearance: none;
-  // } линтер ругается, а как убрать в Сафари отступ у плейcхолдера по другому не могу найти
+  &::-webkit-search-decoration {
+    appearance: none;
+  }
 
   &::placeholder {
     font-size: 17px;
