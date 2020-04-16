@@ -14,23 +14,37 @@
       <nav class="nav">
         <div class="nav__wrapper">
 
-          <button class="humburger" type="button">Меню</button>
-
           <div class="nav__item nav__item--header">
-            <a class="nav__logo" href="index.html">
-              <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина вязаных вещей - Мишка">
+
+            <button class="humburger" type="button">
+              <span class="visually-hidden">Меню</span>
+            </button>
+
+            <a class="nav__logo" href="index.html" aria-label="Переход на главную страницу сайта">
+              <span class="visually-hidden">Главная</span>
             </a>
+
           </div>
 
           <a class="nav__item nav__item--catalog" href="catalog.html">Каталог товаров</a>
 
           <a class="nav__item nav__item--order">Вязание на заказ</a>
 
-          <form class="nav__item" action="https://echo.htmlacademy.ru" method="POST">
-            <input class="nav__input" type="search" placeholder="Поиск по сайту">
+          <form class="nav__item nav__item--search" action="https://echo.htmlacademy.ru" method="POST">
+            <label>
+              <svg class="nav__icon" width="18" height="18">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+              <input class="nav__input" type="search" placeholder="Поиск по сайту">
+            </label>
           </form>
 
-          <a class="nav__item" href="#">Корзина: пока пуста</a>
+          <a class="nav__item nav__item--cart" href="#">
+            <svg class="nav__icon" width="21" height="18">
+              <use xlink:href="#icon-cart"></use>
+            </svg>
+            Корзина: пока пуста
+          </a>
 
           <a class="nav__item nav__item--sale" href="#">Распродажа</a>
           <a class="nav__item nav__item--new" href="#">Новые поступления</a>
@@ -185,5 +199,6 @@
       <include src="build/img/sprite.svg"></include>
     </div>
 
+    <script src="js/nav.js"></script>
   </body>
 </html>
