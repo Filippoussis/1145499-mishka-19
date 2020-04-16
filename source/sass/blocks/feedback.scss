@@ -1,5 +1,6 @@
 .feedback {
   margin-bottom: 40px;
+  padding-top: 0.5px;
 }
 
 .feedback__wrapper {
@@ -7,25 +8,54 @@
 }
 
 .feedback__title {
+  margin-bottom: 24px;
   font-size: 25px;
   font-weight: 700;
   color: #000000;
 }
 
+.feedback__text {
+  margin-bottom: 29px;
+  line-height: 2;
+}
+
 .feedback__author {
   margin-bottom: 35px;
   font-size: 17px;
-
-  &--name {
-    font-weight: 700;
-    color: #000000;
-  }
 }
 
-.feedback__author p {
-  margin: 0;
+.feedback__name {
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #000000;
 }
 
 .feedback__controls {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 35px;
+  border: 1px solid #ececec;
+}
+
+.feedback__control {
+  min-height: 52px;
+  width: 50%;
+  background-color: #ffffff;
+
+  &--prew {
+    border-right: 0.5px solid #ececec;
+    background-image: url("../img/left-arrow.svg");
+    background-size: 50px 26px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  &--next {
+    border-left: 0.5px solid #ececec;
+    background-image: url("../img/right-arrow.svg");
+    background-size: 50px 26px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
