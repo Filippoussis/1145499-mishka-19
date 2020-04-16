@@ -1,3 +1,23 @@
+.web-dev {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 22px;
+  width: 182px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 260px;
+    height: 1px;
+    background-color: #ececec;
+  }
+}
+
 .web-dev__text {
   font-size: 19px;
   font-weight: 700;

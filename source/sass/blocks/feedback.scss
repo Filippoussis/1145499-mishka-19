@@ -30,14 +30,14 @@
   color: #000000;
 }
 
-.feedback__controls {
+.feedback__pagination {
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
   border: 1px solid #ececec;
 }
 
-.feedback__control {
+.feedback__button {
   min-height: 52px;
   width: 50%;
   background-color: #ffffff;
@@ -48,7 +48,6 @@
     background-size: 50px 26px;
     background-repeat: no-repeat;
     background-position: center;
-
   }
 
   &--next {
