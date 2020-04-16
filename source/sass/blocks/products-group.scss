@@ -1,27 +1,58 @@
 .products-group__link {
   display: flex;
-  min-height: 101px;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 103px;
+  padding-left: 28px;
+  padding-right: 28px;
   font-size: 19px;
   font-weight: 700;
+  line-height: 1.26;
   color: #ffffff;
 
   &--interior {
+    padding-right: 36px;
     background-color: $main-green;
+
+    &::after {
+      content: "";
+      width: 40px;
+      height: 62px;
+      background-image: url("../img/interior.svg");
+      background-size: 40px 62px;
+      opacity: 0.5;
+    }
   }
 
   &--toys {
     background-color: #56c3b2;
+
+    &::after {
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/toy.svg");
+      background-size: 60px 60px;
+      opacity: 0.5;
+    }
   }
 }
 
-@media (min-width: $tablet-width) {
-  .products-group__wrapper {
+.products-group__title {
+  width: 30%;
+}
+
+.products-group__wrapper {
+  @media (min-width: $tablet-width) {
     @include wrapper;
     display: flex;
     justify-content: space-between;
   }
+}
 
-  .products-group__link {
+
+.products-group__link {
+  @media (min-width: $tablet-width) {
     width: 50%;
   }
 }
