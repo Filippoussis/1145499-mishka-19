@@ -18,10 +18,90 @@
 }
 
 .features__item {
+  position: relative;
   margin-bottom: 20px;
+  padding-top: 65px;
   font-size: 17px;
   font-weight: 700;
   color: #000000;
+
+  &--eco-material::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    width: 32px;
+    height: 37px;
+    background-image: url("../img/feature-flower.svg");
+    background-size: 32px 37px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--scandinavia-style::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0px;
+    width: 47px;
+    height: 27px;
+    background-image: url("../img/feature-money.svg");
+    background-size: 47px 27px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--boost-likes::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 7px;
+    width: 34px;
+    height: 27px;
+    background-image: url("../img/feature-heart.svg");
+    background-size: 34px 27px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--hand-made::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 35px;
+    height: 34px;
+    background-image: url("../img/feature-ball.svg");
+    background-size: 35px 34px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--import-substitution::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -5px;
+    width: 55px;
+    height: 23px;
+    background-image: url("../img/feature-rocket.svg");
+    background-size: 55px 23px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--gift-box::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 3px;
+    width: 33px;
+    height: 32px;
+    background-image: url("../img/feature-gift.svg");
+    background-size: 33px 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 @media (min-width: $tablet-width) {
