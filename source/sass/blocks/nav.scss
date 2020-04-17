@@ -32,6 +32,7 @@
 
 .nav__item:not(.nav__item--header) {
   align-items: center;
+
   @media (max-width: $mobile-width-only) {
     padding-left: 23%;
     padding-right: 9%;
@@ -70,11 +71,11 @@
       transform: translateX(-50%);
       z-index: 1000;
     }
-
   }
 
   &--delivery {
     display: none;
+
     @media (min-width: $tablet-width) {
       display: flex;
       margin-left: auto;
@@ -91,6 +92,7 @@
       font-weight: 700;
       order: 5;
     }
+
     @media (min-width: $desktop-width) {
       width: 49%;
       margin-left: 0;
@@ -103,6 +105,7 @@
       font-weight: 700;
       order: 4;
     }
+
     @media (min-width: $desktop-width) {
       width: 18%;
     }
@@ -113,6 +116,7 @@
       width: 39.5%;
       justify-content: flex-end;
     }
+
     @media (min-width: $desktop-width) {
       width: 25%;
     }
@@ -135,6 +139,7 @@
 
 .nav__icon {
   opacity: 0.2;
+
   @media (max-width: $mobile-width-only) {
     position: absolute;
     left: 9%;
@@ -147,7 +152,6 @@
       margin-right: 30px;
     }
   }
-
 }
 
 .nav__logo {
