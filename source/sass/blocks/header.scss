@@ -21,6 +21,16 @@
     background-image: none;
     background-color: #f1f1f1;
   }
+
+  @media (min-width: $tablet-width) {
+    min-height: 746px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
+    background-size: 1150px 746px;
+  }
 }
 
 .header__title {
@@ -31,4 +41,9 @@
   line-height: 1.12;
   text-align: center;
   color: #010000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    padding: 140px 50px 50px;
+  }
 }
