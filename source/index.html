@@ -14,23 +14,37 @@
       <nav class="nav">
         <div class="nav__wrapper">
 
-          <button class="humburger" type="button">Меню</button>
-
           <div class="nav__item nav__item--header">
-            <a class="nav__logo">
-              <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина вязаных вещей - Мишка">
+
+            <button class="humburger" type="button">
+              <span class="visually-hidden">Меню</span>
+            </button>
+
+            <a class="nav__logo" aria-label="Переход на главную страницу сайта">
+              <span class="visually-hidden">Главная</span>
             </a>
+
           </div>
 
           <a class="nav__item nav__item--catalog" href="catalog.html">Каталог товаров</a>
 
           <a class="nav__item nav__item--order" href="form.html">Вязание на заказ</a>
 
-          <form class="nav__item" action="https://echo.htmlacademy.ru" method="POST">
-            <input class="nav__input" type="search" placeholder="Поиск по сайту">
+          <form class="nav__item nav__item--search" action="https://echo.htmlacademy.ru" method="POST">
+            <label>
+              <svg class="nav__icon" width="18" height="18">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+              <input class="nav__input" type="search" placeholder="Поиск по сайту">
+            </label>
           </form>
 
-          <a class="nav__item" href="#">Корзина: пока пуста</a>
+          <a class="nav__item nav__item--cart" href="#">
+              <svg class="nav__icon nav__icon--cart" width="21" height="18">
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+              Корзина: пока пуста
+          </a>
 
           <a class="nav__item nav__item--sale" href="#">Распродажа</a>
           <a class="nav__item nav__item--new" href="#">Новые поступления</a>
@@ -45,8 +59,10 @@
 
       <div class="products-group">
         <div class="products-group__wrapper">
-          <a class="products-group__link products-group__link--interior" href="#">Предметы интерьера</a>
-          <a class="products-group__link products-group__link--toys" href="#">Детские игрушки</a>
+          <a class="products-group__link products-group__link--interior" href="#">
+            <span class="products-group__title">Предметы интерьера</span></a>
+          <a class="products-group__link products-group__link--toys" href="#">
+            <span class="products-group__title">Детские игрушки</span></a>
         </div>
       </div>
 
@@ -66,20 +82,20 @@
 
             <img class="hit__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Изображение образцов вязаных корзинок">
 
-            <p class="hit__description">Экологичкески чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <p class="hit__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
 
-            <table class="spec">
+            <table class="hit__spec">
               <tr>
-                <th class="spec__header">Цвет:</th>
-                <td class="spec__data">«Тиффани»/серый</td>
+                <th>Цвет:</th>
+                <td>«Тиффани»/серый</td>
               </tr>
               <tr>
-                <th class="spec__header">Диаметр:</th>
-                <td class="spec__data">25 см</td>
+                <th>Диаметр:</th>
+                <td>25 см</td>
               </tr>
               <tr>
-                <th class="spec__header">Высота:</th>
-                <td class="spec__data">15 см</td>
+                <th>Высота:</th>
+                <td>15 см</td>
               </tr>
             </table>
 
@@ -115,16 +131,20 @@
 
           <h2 class="feedback__title">Отзывы</h2>
           <p class="feedback__text">
-            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
           </p>
           <div class="feedback__author">
-            <p class="feedback__author--name">Анастасия Красильникова</p>
-            <p class="feedback__author--social">@misssssiskras</p>
+            <p class="feedback__name">Анастасия Красильникова</p>
+            <span class="feedback__social">@misssssiskras</span>
           </div>
 
-          <div class="controls feedback__controls">
-            <button class="controls__arrow controls__arrow--prew">Prew</button>
-            <button class="controls__arrow controls__arrow--next">Next</button>
+          <div class="feedback__pagination">
+            <button class="feedback__button feedback__button--prew">
+              <span class="visually-hidden">Prew</span>
+            </button>
+            <button class="feedback__button feedback__button--next">
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
 
           <a class="main-link main-link--feedback" href="#">Написать</a>
@@ -171,7 +191,7 @@
           <img src="img/logo-footer.svg" width="102" height="34" alt="Логотип интернет-магазина вязаных вещей - Мишка">
         </a>
 
-        <div class="social">
+        <div class="social footer__social">
           <a class="social__link" href="#">
             <svg class="social__icon" width="22" height="21">
               <use xlink:href="#icon-insta"></use>
@@ -189,7 +209,7 @@
           </a>
         </div>
 
-        <div class="web-dev">
+        <div class="web-dev footer__web-dev">
           <span class="web-dev__text">Разработано</span>
           <a class="web-dev__logo" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="web-dev__icon" width="27" height="34">
@@ -205,5 +225,6 @@
       <include src="build/img/sprite.svg"></include>
     </div>
 
+    <script src="js/nav.js"></script>
   </body>
 </html>
