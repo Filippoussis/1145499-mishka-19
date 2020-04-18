@@ -40,7 +40,18 @@
 }
 
 .contacts__map {
-  display: flex;
-  margin: auto;
-  margin-bottom: 40px;
+  position: relative;
+  margin-bottom: 35px;
+  min-height: 457px;
+}
+
+.contacts__image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.contacts__iframe {
+  width: 100%;
 }
