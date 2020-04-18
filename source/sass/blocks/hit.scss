@@ -1,7 +1,10 @@
 .hit {
   position: relative;
   padding-top: 8px;
-  margin-bottom: 40px;
+  padding-bottom: 35px;
+  border-bottom: 6px solid;
+  border-image-source: url("../img/bg-zigzag-line.svg");
+  border-image-slice: 100;
 }
 
 .hit__wrapper {
@@ -30,7 +33,7 @@
 }
 
 .hit__image {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .hit__price {
@@ -59,17 +62,22 @@
   border-bottom: 1px solid #ececec;
 }
 
-@media (max-width: $mobile-width-only) {
-  .hit__content {
+.hit__content {
+  @media (max-width: $mobile-width-only) {
     display: flex;
     flex-direction: column;
   }
+}
 
-  .hit__commerc {
-    order: 1000;
+.hit__commerc {
+  @media (max-width: $mobile-width-only) {
+  order: 1000;
   }
+}
 
-  .hit__image {
+.hit__picture {
+  @media (max-width: $mobile-width-only) {
+    margin: 0 auto;
     order: 1;
   }
 }

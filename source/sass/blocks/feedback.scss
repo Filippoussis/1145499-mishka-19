@@ -1,6 +1,9 @@
 .feedback {
-  margin-bottom: 40px;
-  padding-top: 0.5px;
+  padding-top: 1px;
+  padding-bottom: 45px;
+  border-bottom: 6px solid;
+  border-image-source: url("../img/bg-zigzag-line.svg");
+  border-image-slice: 100;
 }
 
 .feedback__wrapper {
