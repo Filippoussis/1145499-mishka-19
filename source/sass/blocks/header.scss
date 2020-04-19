@@ -14,6 +14,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 746px;
+    margin-bottom: -119px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-size: 1150px 746px;
 
@@ -48,6 +49,6 @@
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
-    padding: 140px 50px 50px;
+    padding: 155px 50px 50px;
   }
 }

@@ -11,7 +11,7 @@
   color: #ffffff;
 
   &--interior {
-    padding-right: 36px;
+    padding-right: 35px;
     background-color: $main-green;
 
     &::after {
@@ -39,6 +39,11 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    min-height: 119px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 20px;
+    line-height: 1.6;
   }
 }
 

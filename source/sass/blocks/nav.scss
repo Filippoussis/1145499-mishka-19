@@ -43,13 +43,13 @@
   position: relative;
   display: flex;
   min-height: 79px;
-  font-size: 17px;
   font-weight: 700;
   color: #000000;
   line-height: 1.41;
 
   @media (max-width: $mobile-width-only) {
     border-bottom: 1px solid #ececec;
+    font-size: 17px;
   }
 
   @media (min-width: $tablet-width) {
@@ -79,7 +79,7 @@
     @media (min-width: $tablet-width) {
       display: flex;
       margin-left: auto;
-      font-size: 15px;
+      padding-bottom: 30px;
       font-weight: 400;
       order: 1000;
     }
@@ -88,8 +88,7 @@
   &--order {
     @media (min-width: $tablet-width) {
       margin-left: 35px;
-      font-size: 15px;
-      font-weight: 700;
+      padding-bottom: 30px;
       order: 5;
     }
 
@@ -101,6 +100,7 @@
 
   &--catalog {
     @media (min-width: $tablet-width) {
+      padding-bottom: 30px;
       font-size: 15px;
       font-weight: 700;
       order: 4;
@@ -115,6 +115,7 @@
     @media (min-width: $tablet-width) {
       width: 39.5%;
       justify-content: flex-end;
+      font-size: 17px;
     }
 
     @media (min-width: $desktop-width) {
