@@ -1,6 +1,13 @@
 .features {
   margin-bottom: 40px;
   padding-top: 8px;
+  border-top: 6px solid;
+  border-image-source: url("../img/bg-zigzag-line.svg");
+  border-image-slice: 100;
+
+  @media (min-width: $tablet-width) {
+    border-top-width: 15px;
+  }
 }
 
 .features__wrapper {

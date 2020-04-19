@@ -58,3 +58,9 @@
     justify-content: space-between;
   }
 }
+
+.products-group__wrapper {
+  @media (min-width: $tablet-width) {
+    margin-bottom: -10px;
+  }
+}

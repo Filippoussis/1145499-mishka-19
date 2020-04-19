@@ -2,13 +2,34 @@
   position: relative;
   padding-top: 8px;
   padding-bottom: 35px;
-  border-bottom: 6px solid;
-  border-image-source: url("../img/bg-zigzag-line.svg");
-  border-image-slice: 100;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 50px;
+    padding-top: 33px;
+    border-top: 24px solid;
+    border-image-source: url("../img/bg-zigzag-fill.svg");
+    border-image-slice: 100;
+
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
 }
 
 .hit__wrapper {
   @include wrapper;
+}
+
+.hit__header {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    margin-bottom: 50px;
+  }
 }
 
 .hit__title {
@@ -16,6 +37,11 @@
   font-size: 25px;
   font-weight: 700;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 43px;
+  }
 }
 
 .hit__lable {
@@ -25,15 +51,34 @@
   font-weight: 700;
   text-transform: uppercase;
   color: $main-green;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 70px;
+    text-align: center;
+  }
 }
 
 .hit__description {
   margin-bottom: 20px;
   line-height: 1.6;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    font-size: 17px;
+    line-height: 1.76;
+  }
 }
 
 .hit__image {
   margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    float: right;
+    margin: 0 0 0 45px;
+    width: 333px;
+    height: 404px;
+  }
 }
 
 .hit__price {
@@ -41,11 +86,20 @@
   font-size: 17px;
   font-weight: 700;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+    font-size: 20px;
+  }
 }
 
 .hit__spec {
   margin-bottom: 30px;
   border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .hit__spec th {
@@ -56,6 +110,10 @@
 
 .hit__spec td {
   padding: 10px 0 10px 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 28px;
+  }
 }
 
 .hit__spec tr {
@@ -81,28 +139,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .hit__header {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .hit::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .hit__image {
-    float: right;
-  }
-}
-
 @media (min-width: $desktop-width) {
-  .hit__wrapper {
-    display: flex;
-  }
-
   .hit__title {
     position: absolute;
     margin-left: 80px;
