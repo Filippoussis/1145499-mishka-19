@@ -1,11 +1,11 @@
 .features {
-  margin-bottom: 40px;
   padding-top: 8px;
   border-top: 6px solid;
   border-image-source: url("../img/bg-zigzag-line.svg");
   border-image-slice: 100;
 
   @media (min-width: $tablet-width) {
+    padding-top: 15px;
     border-top-width: 15px;
   }
 }
@@ -18,10 +18,21 @@
   font-size: 25px;
   font-weight: 700;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    font-size: 43px;
+  }
 }
 
 .features__list {
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .features__item {
@@ -31,6 +42,36 @@
   font-size: 17px;
   font-weight: 700;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    margin-bottom: 42px;
+    font-size: 20px;
+
+    &--eco-material {
+      order: 1;
+    }
+
+    &--hand-made {
+      order: 2;
+    }
+
+    &--scandinavia-style {
+      order: 3;
+    }
+
+    &--import-substitution {
+      order: 4;
+    }
+
+    &--boost-likes {
+      order: 5;
+    }
+
+    &--gift-box {
+      order: 6;
+    }
+  }
 
   &--eco-material::before {
     content: "";
@@ -108,40 +149,8 @@
     background-size: 33px 32px;
     background-repeat: no-repeat;
     background-position: center;
-  }
-}
 
-@media (min-width: $tablet-width) {
-  .features__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .features__item {
-    width: 40%;
-
-    &--eco-material {
-      order: 1;
-    }
-
-    &--hand-made {
-      order: 2;
-    }
-
-    &--scandinavia-style {
-      order: 3;
-    }
-
-    &--import-substitution {
-      order: 4;
-    }
-
-    &--boost-likes {
-      order: 5;
-    }
-
-    &--gift-box {
+    @media (min-width: $tablet-width) {
       order: 6;
     }
   }
