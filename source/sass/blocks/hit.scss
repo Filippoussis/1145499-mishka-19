@@ -16,6 +16,10 @@
       clear: both;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    border-top-width: 34px;
+  }
 }
 
 .hit__wrapper {
