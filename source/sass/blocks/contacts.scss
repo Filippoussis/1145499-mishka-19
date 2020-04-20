@@ -12,6 +12,7 @@
 }
 
 .contacts__title {
+  position: relative;
   margin-bottom: 30px;
   font-size: 18px;
   font-weight: 700;
@@ -20,6 +21,18 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 48px;
     font-size: 43px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 47px;
+      height: 81px;
+      background-image: url("../img/flag.svg");
+      background-size: 47px 81px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 }
 
