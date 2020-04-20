@@ -2,6 +2,10 @@
   min-height: 160px;
   padding-top: 25px;
   background-color: #f1f1f1;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+  }
 }
 
 .footer__wrapper {
@@ -10,6 +14,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer__item {
+  @media (min-width: $tablet-width) {
+    width: 27%;
   }
 }
 
@@ -25,4 +36,8 @@
 
 .footer__web-dev {
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

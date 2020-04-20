@@ -6,7 +6,8 @@
   padding-top: 22px;
   width: 182px;
 
-  &::before {
+  @media (max-width: $mobile-width-only) {
+    &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -15,6 +16,11 @@
     width: 260px;
     height: 1px;
     background-color: #ececec;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
   }
 }
 

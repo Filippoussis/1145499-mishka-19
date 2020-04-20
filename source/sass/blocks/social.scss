@@ -1,8 +1,13 @@
 .social {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 142px;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .social__link {
