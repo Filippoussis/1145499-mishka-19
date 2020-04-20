@@ -48,7 +48,14 @@
   color: #010000;
 
   @media (min-width: $tablet-width) {
+    padding: 155px 50px;
     font-size: 43px;
-    padding: 155px 50px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 705px;
+    margin: 0 auto;
+    padding: 155px 0;
+    font-size: 53px;
   }
 }
