@@ -19,6 +19,13 @@
       background-image: url("../img/review@2x.jpg");
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+    padding-bottom: 130px;
+    background-position-x: 30%;
+    border-bottom-width: 23px;
+  }
 }
 
 .feedback__wrapper {
@@ -28,6 +35,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 225px;
   }
 }
 
@@ -41,6 +52,11 @@
     margin-bottom: 35px;
     font-size: 43px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+    font-size: 53px;
+  }
 }
 
 .feedback__text {
@@ -51,6 +67,11 @@
     margin-bottom: 60px;
     font-size: 17px;
     line-height: 1.76;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+    padding-right: 80px;
   }
 }
 
@@ -123,5 +144,9 @@
     left: 71%;
     top: 110px;
     min-width: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 67%;
   }
 }
