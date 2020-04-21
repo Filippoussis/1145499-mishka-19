@@ -9,4 +9,10 @@
   border: 2px solid #444444;
   background-color: #ffffff;
   color: inherit;
+
+  &--hit {
+    @media (min-width: $desktop-width) {
+      width: 292px;
+    }
+  }
 }
