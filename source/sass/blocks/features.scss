@@ -8,6 +8,10 @@
     padding-top: 15px;
     border-top-width: 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    border-top-width: 23px;
+  }
 }
 
 .features__wrapper {
@@ -23,6 +27,11 @@
     margin-bottom: 40px;
     font-size: 43px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 175px;
+    font-size: 53px;
+  }
 }
 
 .features__list {
@@ -32,6 +41,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 870px;
+    padding-left: 175px;
   }
 }
 
