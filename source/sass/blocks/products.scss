@@ -1,6 +1,14 @@
 .products {
   padding-top: 30px;
   padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -10px;
+    padding-top: 65px;
+    border-top: 24px solid;
+    border-image-source: url("../img/bg-zigzag-fill.svg");
+    border-image-slice: 100;
+  }
 }
 
 .products__wrapper {
@@ -17,6 +25,10 @@
 
 .products__item:not(:last-child) {
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .products__picture {
@@ -33,6 +45,11 @@
 
 .products__content {
   padding: 15px 30px 28px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    padding: 10px 30px 30px 25px;
+  }
 }
 
 .products__title {
@@ -50,6 +67,7 @@
   font-size: 13px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 180px;
     font-size: 15px;
   }
 }

@@ -47,6 +47,7 @@
 
 .presentation__picture {
   position: relative;
+
   &::before {
     content: "";
     position: absolute;

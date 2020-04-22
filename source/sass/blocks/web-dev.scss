@@ -8,14 +8,14 @@
 
   @media (max-width: $mobile-width-only) {
     &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 260px;
-    height: 1px;
-    background-color: #ececec;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 260px;
+      height: 1px;
+      background-color: #ececec;
     }
   }
 
