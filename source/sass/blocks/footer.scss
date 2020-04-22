@@ -4,6 +4,7 @@
   background-color: #f1f1f1;
 
   @media (min-width: $tablet-width) {
+    min-height: 140px;
     padding-top: 50px;
   }
 }
