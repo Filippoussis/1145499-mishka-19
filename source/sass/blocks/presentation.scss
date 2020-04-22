@@ -1,13 +1,66 @@
 .presentation {
-  margin-bottom: 40px;
+  padding-bottom: 55px;
 }
 
 .presentation__wrapper {
   @include wrapper;
 }
 
+.presentation__frame {
+  padding-top: 10px;
+  padding-bottom: 35px;
+  border: 1px solid #ececec;
+}
+
 .presentation__title {
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 90px;
   font-size: 17px;
   font-weight: 700;
+  line-height: 1.41;
   color: #000000;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: -55px;
+    width: 32px;
+    height: 22px;
+    background-image: url("../img/video.svg");
+    background-size: 32px 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.presentation__text {
+  margin-bottom: 25px;
+  padding-top: 11px;
+  padding-left: 32px;
+  padding-right: 35px;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.presentation__picture {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 101px;
+    height: 77px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-image: url("../img/play.svg");
+    background-size: 101px 77px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.presentation__main-link {
+  margin: 0 auto;
 }

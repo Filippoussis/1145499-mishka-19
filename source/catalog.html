@@ -139,10 +139,19 @@
       <section class="presentation">
         <div class="presentation__wrapper">
 
-          <h2 class="presentation__title">Процесс производства</h2>
-          <img class="presentation__image" src="img/video-mobile@1x.jpg" width="260" height="150">
-          <p class="presentation__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a class="main-link main-link--presentation" href="#">Сделать заказ</a>
+          <div class="presentation__frame">
+            <h2 class="presentation__title">Процесс производства</h2>
+            <picture class="presentation__picture">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="presentation__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg" alt="Презентация производственного процесса вязания предметов интерьера и игрушек" width="260" height="150">
+            </picture>
+            <p class="presentation__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a class="main-link main-link--presentation presentation__main-link" href="#">Сделать заказ</a>
+          </div>
 
         </div>
       </section>
