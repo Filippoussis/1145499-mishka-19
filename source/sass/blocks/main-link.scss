@@ -18,5 +18,9 @@
 
   &--presentation {
     width: 192px;
+
+    @media (min-width: $tablet-width) {
+      width: 584px;
+    }
   }
 }
