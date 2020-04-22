@@ -34,6 +34,10 @@
       min-height: 226px;
       background-image: none;
     }
+
+    @media (min-width: $tablet-width) {
+      min-height: 250px;
+    }
   }
 }
 
@@ -54,7 +58,7 @@
   @media (min-width: $desktop-width) {
     width: 705px;
     margin: 0 auto;
-    padding: 155px 0;
+    padding: 95px 50px 50px;
     font-size: 53px;
   }
 }
