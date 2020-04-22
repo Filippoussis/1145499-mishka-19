@@ -13,6 +13,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 120px;
+    padding-bottom: 55px;
   }
 }
 
@@ -116,10 +117,6 @@
   @media (min-width: $tablet-width) {
     margin-top: auto;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .products__price {
@@ -131,7 +128,7 @@
     font-size: 17px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-left: 0;
   }
 }
