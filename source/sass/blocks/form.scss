@@ -5,15 +5,21 @@
 .form__fieldset {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
 }
 
 .form__legend {
-  margin-bottom: 30px;
   font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
   color: $main-green;
+
+  &--type {
+    margin-bottom: 30px;
+  }
+
+  &--color {
+    margin-bottom: 30px;
+  }
 }
 
 .form__label {
@@ -55,22 +61,72 @@
   background-color: $main-green;
 }
 
+.form__color {
+  margin-bottom: 25px;
+}
+
 .form__color label {
   position: relative;
-  margin-bottom: 40px;
   padding-left: 60px;
+}
 
+.form__color label:not(:last-child) {
+  margin-bottom: 42px;
+}
+
+.form__color span {
   &::before {
     content: "";
     position: absolute;
-    left: 0;
     top: 50%;
     transform: translateY(-50%);
+    left: 0;
     width: 40px;
     height: 40px;
     border: 2px solid #444444;
+    background-color: #ffffff;
   }
 }
+
+.form__color input:checked + span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translate(-50%, -50%);
+  width: 22px;
+  height: 16px;
+  border-radius: 50%;
+  background-image: url("../img/tick.svg");
+  background-size: 22px 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form__name {
+  margin-bottom: 10px;
+}
+
+.form__name .form__legend {
+  margin-bottom: 28px;
+}
+
+.form__name label:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.form__name span {
+  display: block;
+}
+
+.form__name input {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: none;
+  border-bottom: 2px solid #000000;
+}
+
 
 @media (max-width: $mobile-width-only) {
   .form__wrapper {
