@@ -9,6 +9,7 @@
 }
 
 .form__legend {
+  margin-bottom: 30px;
   font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
@@ -19,6 +20,56 @@
   font-size: 17px;
   font-weight: 700;
   color: #000000;
+}
+
+.form__type label {
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 60px;
+}
+
+.form__type span {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #444444;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+}
+
+.form__type input:checked + span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $main-green;
+}
+
+.form__color label {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: 2px solid #444444;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
