@@ -124,7 +124,7 @@
   padding-top: 16px;
   padding-bottom: 16px;
   border: none;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #444444;
 
   &::placeholder {
     color: rgba(68, 68, 68, 0.3);
@@ -145,7 +145,7 @@
   padding-top: 16px;
   padding-bottom: 16px;
   border: none;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #444444;
 
   &::placeholder {
     font-size: 17px;
@@ -185,7 +185,7 @@
   padding-top: 16px;
   padding-bottom: 16px;
   border: none;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #444444;
 
   &::placeholder {
     font-size: 17px;
@@ -209,6 +209,38 @@
     background-position: center;
     opacity: 0.2;
   }
+}
+
+.form__addition {
+  margin-bottom: 16px;
+}
+
+.form__addition .form__legend {
+  margin-bottom: 25px;
+}
+
+.form__addition textarea {
+  width: 100%;
+  min-height: 140px;
+  padding: 15px;
+  border: 2px solid #444444;
+  resize: none;
+
+  &::placeholder {
+    font-size: 17px;
+    line-height: 1.06;
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.form__note {
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.form__main-link {
+  width: 100%;
+  margin: 0 auto;
 }
 
 @media (max-width: $mobile-width-only) {
