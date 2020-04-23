@@ -125,8 +125,50 @@
   padding-bottom: 16px;
   border: none;
   border-bottom: 2px solid #000000;
+
+  &::placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
+.form__tel {
+  margin-bottom: 15px;
+}
+
+.form__tel .form__legend {
+  margin-bottom: 5px;
+}
+
+.form__tel input {
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: none;
+  border-bottom: 2px solid #000000;
+
+  &::placeholder {
+    font-size: 17px;
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.form__wrapper--tel {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    width: 25px;
+    height: 24px;
+    background-image: url("../img/phone.svg");
+    background-size: 25px 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+  }
+}
 
 @media (max-width: $mobile-width-only) {
   .form__wrapper {
