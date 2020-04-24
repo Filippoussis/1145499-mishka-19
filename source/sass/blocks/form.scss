@@ -69,6 +69,7 @@
 
     @media (min-width: $tablet-width) {
       padding-top: 50px;
+      margin-bottom: 50px;
     }
   }
 }
@@ -424,6 +425,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    font-size: 17px;
   }
 }
 
@@ -437,7 +439,7 @@
   }
 }
 
-.form__footer {
+.form__footer .form__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
