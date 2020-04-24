@@ -20,6 +20,11 @@
 
   &--tel {
     padding-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  &--email {
+    padding-top: 15px;
   }
 }
 
@@ -43,6 +48,10 @@
   }
 
   &--tel {
+    margin-bottom: 5px;
+  }
+
+  &--email {
     margin-bottom: 5px;
   }
 }
@@ -191,19 +200,19 @@
       color: rgba(68, 68, 68, 0.3);
     }
   }
-}
 
-.form__tel input {
-  position: relative;
-  width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border: none;
-  border-bottom: 2px solid #444444;
+  &--email {
+    position: relative;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: none;
+    border-bottom: 2px solid #444444;
 
-  &::placeholder {
-    font-size: 17px;
-    color: rgba(68, 68, 68, 0.3);
+    &::placeholder {
+      font-size: 17px;
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 }
 
@@ -226,29 +235,7 @@
   }
 }
 
-.form__email {
-  margin-bottom: 15px;
-}
-
-.form__email .form__legend {
-  margin-bottom: 5px;
-}
-
-.form__email input {
-  position: relative;
-  width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border: none;
-  border-bottom: 2px solid #444444;
-
-  &::placeholder {
-    font-size: 17px;
-    color: rgba(68, 68, 68, 0.3);
-  }
-}
-
-.form__wrapper--email {
+.form__inner--email {
   position: relative;
 
   &::after {
