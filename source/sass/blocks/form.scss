@@ -34,6 +34,20 @@
 }
 
 .form__legend {
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::after {
+      content: "";
+      margin-left: 20px;
+      width: 70%;
+      height: 1px;
+      background-color: $main-green;
+    }
+  }
+
   margin: 0;
   font-size: 17px;
   font-weight: 700;
@@ -288,7 +302,6 @@
 
 .form__main-link {
   width: 100%;
-  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 230px;
