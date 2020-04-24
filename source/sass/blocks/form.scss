@@ -25,6 +25,11 @@
 
   &--email {
     padding-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  &--addition {
+    padding-top: 15px;
   }
 }
 
@@ -53,6 +58,10 @@
 
   &--email {
     margin-bottom: 5px;
+  }
+
+  &--addition {
+    margin-bottom: 25px;
   }
 }
 
@@ -254,15 +263,7 @@
   }
 }
 
-.form__addition {
-  margin-bottom: 16px;
-}
-
-.form__addition .form__legend {
-  margin-bottom: 25px;
-}
-
-.form__addition textarea {
+.form__textarea {
   width: 100%;
   min-height: 140px;
   padding: 15px;
