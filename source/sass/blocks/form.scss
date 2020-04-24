@@ -66,6 +66,10 @@
 
   &--addition {
     padding-top: 15px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 50px;
+    }
   }
 }
 
@@ -112,6 +116,10 @@
 
   &--addition {
     margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 15px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -403,6 +411,10 @@
     font-size: 17px;
     line-height: 1.06;
     color: rgba(68, 68, 68, 0.3);
+
+    @media (min-width: $tablet-width) {
+      font-size: 19px;
+    }
   }
 }
 
