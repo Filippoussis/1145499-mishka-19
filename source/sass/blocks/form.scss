@@ -4,6 +4,11 @@
 
 .form__wrapper {
   @include wrapper;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form__fieldset {
@@ -16,6 +21,10 @@
 
   &--color {
     padding-top: 15px;
+
+    @media (min-width: $tablet-width) {
+      background-color: #f1f1f1;
+    }
   }
 
   &--tel {
@@ -30,6 +39,10 @@
 
   &--addition {
     padding-top: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
   }
 }
 
@@ -77,6 +90,16 @@
   &--addition {
     margin-bottom: 25px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 25%;
+  }
+}
+
+.form__inner {
+  @media (min-width: $tablet-width) {
+    width: 75%;
+  }
 }
 
 .form__label {
@@ -94,11 +117,6 @@
   font-size: 17px;
   font-weight: 700;
   color: #000000;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 55px;
-    padding-left: 85px;
-  }
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
@@ -123,6 +141,11 @@
         width: 52px;
         height: 53px;
       }
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 55px;
+      padding-left: 80px;
     }
   }
 
@@ -315,39 +338,5 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .form__legend {
-    position: absolute;
-  }
-
-  .form__wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 165px;
-
-    &--type {
-      flex-direction: column;
-    }
-
-    &--color {
-      flex-wrap: wrap;
-    }
-
-    &--name {
-      flex-direction: column;
-    }
-  }
-
-  .form__wrapper--color label {
-    width: 47%;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form__wrapper--color label {
-    width: 30%;
   }
 }

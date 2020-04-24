@@ -1,3 +1,12 @@
+.main {
+  @media (min-width: $tablet-width) {
+    margin-top: -10px;
+    border-top: 24px solid;
+    border-image-source: url("../img/bg-zigzag-fill.svg");
+    border-image-slice: 100;
+  }
+}
+
 .main__wrapper {
   @include wrapper;
 }
@@ -9,17 +18,8 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
-    margin-bottom: 90px;
+    margin-bottom: 25px;
     font-size: 17px;
     line-height: 1.76;
-  }
-}
-
-.main {
-  @media (min-width: $tablet-width) {
-    margin-top: -10px;
-    border-top: 24px solid;
-    border-image-source: url("../img/bg-zigzag-fill.svg");
-    border-image-slice: 100;
   }
 }
