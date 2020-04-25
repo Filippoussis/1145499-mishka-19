@@ -1,10 +1,11 @@
 .contacts {
   position: relative;
   padding-top: 25px;
-  padding-bottom: 40px;
 
-  @media (min-width: $tablet-width) {
-    padding-bottom: 60px;
+  @media (max-width: $tablet-width-only) {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 90px;
   }
 
   @media (min-width: $desktop-width) {
@@ -130,6 +131,10 @@
   margin-bottom: 35px;
   min-height: 457px;
 
+  @media (max-width: $tablet-width-only) {
+    order: 1000;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;
   }
@@ -172,8 +177,17 @@
 }
 
 .contacts__main-link {
-  width: 230px;
-  margin: 0 auto;
+  @media (max-width: $tablet-width-only) {
+    width: 260px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 39px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-left: 175px;
