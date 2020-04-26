@@ -1,3 +1,35 @@
+.main {
+  @media (min-width: $tablet-width) {
+    margin-top: -10px;
+    border-top: 24px solid;
+    border-image-source: url("../img/bg-zigzag-fill.svg");
+    border-image-slice: 100;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+  }
+}
+
 .main__wrapper {
   @include wrapper;
+}
+
+.main__text {
+  padding-top: 10px;
+  font-size: 13px;
+  line-height: 1.85;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 25px;
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
 }

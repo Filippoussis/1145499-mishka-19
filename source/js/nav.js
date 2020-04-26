@@ -1,12 +1,16 @@
-var header = document.querySelector('.header');
-var nav = header.querySelector('.nav');
-var humburger = header.querySelector('.humburger');
+'use strict';
 
-nav.classList.add('nav--closed');
-humburger.classList.add('humburger--open');
+(function () {
+  var header = document.querySelector('.header');
+  var nav = header.querySelector('.nav');
+  var humburger = header.querySelector('.humburger');
 
-humburger.addEventListener('click', function () {
-  nav.classList.toggle('nav--closed');
-  humburger.classList.toggle('humburger--open');
-  humburger.classList.toggle('humburger--close');
-});
+  nav.classList.add('nav--closed');
+  humburger.classList.add('humburger--open');
+
+  humburger.addEventListener('click', function () {
+    nav.classList.toggle('nav--closed');
+    humburger.classList.toggle('humburger--open');
+    humburger.classList.toggle('humburger--close');
+  });
+})();

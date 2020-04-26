@@ -9,4 +9,22 @@
   border: 2px solid #444444;
   background-color: #ffffff;
   color: inherit;
+
+  &--hit {
+    @media (min-width: $desktop-width) {
+      width: 292px;
+    }
+  }
+
+  &--presentation {
+    width: 192px;
+
+    @media (min-width: $tablet-width) {
+      width: 584px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 230px;
+    }
+  }
 }
