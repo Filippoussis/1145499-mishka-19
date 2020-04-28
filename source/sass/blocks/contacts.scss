@@ -5,7 +5,7 @@
   @media (max-width: $tablet-width-only) {
     display: flex;
     flex-direction: column;
-    padding-bottom: 90px;
+    padding-bottom: 110px;
   }
 
   @media (min-width: $desktop-width) {
@@ -182,7 +182,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 39px;
+    bottom: 55px;
   }
 
   @media (min-width: $tablet-width) {
