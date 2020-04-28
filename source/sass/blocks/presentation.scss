@@ -15,12 +15,12 @@
 }
 
 .presentation__inner {
+  display: flex;
+  flex-direction: column;
   padding-bottom: 35px;
   border: 1px solid #ececec;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
     padding-bottom: 45px;
   }
 
@@ -40,10 +40,12 @@
   position: relative;
   margin-bottom: 25px;
   padding-left: 90px;
+  padding-top: 10px;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.41;
   color: #000000;
+  order: -1;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 15px;
