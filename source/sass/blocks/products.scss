@@ -155,14 +155,14 @@
 
 .products__icon-cart {
   opacity: 0.2;
+}
 
-  &:hover,
-  &:focus {
-    fill: $main-green;
-    opacity: 1;
-  }
+.products__cart:hover .products__icon-cart,
+.products__cart:focus .products__icon-cart {
+  fill: $main-green;
+  opacity: 1;
+}
 
-  &:active {
-    opacity: 0.3;
-  }
+.products__cart:active .products__icon-cart {
+  opacity: 0.3;
 }
