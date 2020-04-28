@@ -10,18 +10,18 @@
   background-color: #ffffff;
   color: inherit;
 
+  &:hover,
+  &:focus {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: #444444;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--hit {
-    &:hover,
-    &:focus {
-      background-color: #444444;
-      color: #ffffff;
-    }
-
-    &:active {
-      background-color: #444444;
-      color: rgba(255, 255, 255, 0.3);
-    }
-
     @media (min-width: $desktop-width) {
       width: 292px;
     }
