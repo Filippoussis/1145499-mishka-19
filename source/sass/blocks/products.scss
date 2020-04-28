@@ -22,8 +22,17 @@
   }
 }
 
+.products__link {
+  display: block;
+  color: #000000;
+}
+
 .products__item {
   outline: 1px solid #ececec;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
