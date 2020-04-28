@@ -37,7 +37,7 @@
     }
   }
 
-  &--tel {
+  &--phone {
     padding-top: 15px;
     padding-bottom: 15px;
 
@@ -49,7 +49,7 @@
     }
   }
 
-  &--email {
+  &--mail {
     padding-top: 15px;
     padding-bottom: 15px;
 
@@ -108,11 +108,11 @@
     margin-bottom: 28px;
   }
 
-  &--tel {
+  &--phone {
     margin-bottom: 5px;
   }
 
-  &--email {
+  &--mail {
     margin-bottom: 5px;
   }
 
@@ -154,58 +154,6 @@
       flex-wrap: wrap;
     }
   }
-
-  &--tel {
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 5px;
-      width: 25px;
-      height: 25px;
-      background-image: url("../img/phone.svg");
-      background-size: 25px 25px;
-      background-repeat: no-repeat;
-      background-position: center;
-      opacity: 0.2;
-
-      @media (min-width: $tablet-width) {
-        right: 25px;
-        transform: translateY(-100%);
-      }
-
-      @media (min-width: $desktop-width) {
-        right: 10px;
-      }
-    }
-  }
-
-  &--email {
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 5px;
-      width: 32px;
-      height: 32px;
-      background-image: url("../img/mail.svg");
-      background-size: 32px 32px;
-      background-repeat: no-repeat;
-      background-position: center;
-      opacity: 0.2;
-
-      @media (min-width: $tablet-width) {
-        right: 25px;
-        transform: translateY(-75%);
-      }
-
-      @media (min-width: $desktop-width) {
-        right: 10px;
-      }
-    }
-  }
 }
 
 .form__label {
@@ -244,6 +192,14 @@
     font-size: 19px;
   }
 
+  &--name {
+    padding-left: 0;
+
+    @media (min-width: $tablet-width) {
+      align-self: flex-start;
+    }
+  }
+
   &--type {
     margin-bottom: 25px;
 
@@ -262,6 +218,20 @@
       @media (min-width: $tablet-width) {
         width: 52px;
         height: 53px;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      &::before {
+        border-color: $main-green;
+      }
+    }
+
+    &:active {
+      &::before {
+        border-color: inherit;
+        opacity: 0.3;
       }
     }
 
@@ -295,13 +265,19 @@
         height: 52px;
       }
     }
-  }
 
-  &--name {
-    padding-left: 0;
+    &:hover,
+    &:focus {
+      &::before {
+        border-color: $main-green;
+      }
+    }
 
-    @media (min-width: $tablet-width) {
-      align-self: flex-start;
+    &:active {
+      &::before {
+        border-color: inherit;
+        opacity: 0.3;
+      }
     }
   }
 }
@@ -358,6 +334,11 @@
     border: none;
     border-bottom: 2px solid #444444;
 
+    &:hover,
+    &:focus {
+      border-color: $main-green;
+    }
+
     @media (min-width: $tablet-width) {
       padding-top: 5px;
       margin-left: 25px;
@@ -374,13 +355,24 @@
     }
   }
 
-  &--tel {
+  &--phone {
     position: relative;
     width: 100%;
     padding-top: 16px;
     padding-bottom: 16px;
     border: none;
     border-bottom: 2px solid #444444;
+
+    &:hover,
+    &:focus {
+      border-color: $main-green;
+    }
+
+    &:hover + .form__icon,
+    &:focus + .form__icon {
+      fill: $main-green;
+      opacity: 1;
+    }
 
     @media (min-width: $tablet-width) {
       padding-top: 5px;
@@ -399,13 +391,24 @@
     }
   }
 
-  &--email {
+  &--mail {
     position: relative;
     width: 100%;
     padding-top: 16px;
     padding-bottom: 16px;
     border: none;
     border-bottom: 2px solid #444444;
+
+    &:hover,
+    &:focus {
+      border-color: $main-green;
+    }
+
+    &:hover + .form__icon,
+    &:focus + .form__icon {
+      fill: $main-green;
+      opacity: 1;
+    }
 
     @media (min-width: $tablet-width) {
       padding-top: 5px;
@@ -425,12 +428,30 @@
   }
 }
 
+.form__icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    transform: none;
+  }
+}
+
 .form__textarea {
   width: 100%;
   min-height: 140px;
   padding: 15px;
   border: 2px solid #444444;
   resize: none;
+
+  &:hover,
+  &:focus {
+    border-color: $main-green;
+  }
 
   &::placeholder {
     font-size: 17px;
