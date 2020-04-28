@@ -30,14 +30,14 @@
     background-color: #f1f1f1;
 
     @media (min-width: $tablet-width) {
-      min-height: 226px;
+      min-height: 225px;
       background-image: none;
     }
   }
 
   &--form {
     @media (min-width: $desktop-width) {
-      min-height: 250px;
+      min-height: 255px;
     }
   }
 }
@@ -52,14 +52,14 @@
   color: #010000;
 
   @media (min-width: $tablet-width) {
-    padding: 155px 50px 50px;
+    padding: 155px 100px 100px;
     font-size: 43px;
   }
 
   @media (min-width: $desktop-width) {
     width: 705px;
     margin: 0 auto;
-    padding: 95px 50px 50px;
+    padding: 155px 0px 0px;
     font-size: 53px;
   }
 }
