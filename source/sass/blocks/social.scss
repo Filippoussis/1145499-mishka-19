@@ -13,4 +13,17 @@
 .social__link {
   display: flex;
   align-items: center;
+
+  &:hover,
+  &:focus {
+    .social__icon {
+      fill: $main-green;
+    }
+  }
+
+  &:active {
+    .social__icon {
+      opacity: 0.3;
+    }
+  }
 }
