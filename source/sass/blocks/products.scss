@@ -24,7 +24,19 @@
 
 .products__link {
   display: block;
-  color: #000000;
+
+  &--title {
+    color: #000000;
+
+    &:hover,
+    &:focus {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
 }
 
 .products__item {
@@ -141,6 +153,16 @@
   }
 }
 
-.products__cart-icon {
+.products__icon-cart {
   opacity: 0.2;
+
+  &:hover,
+  &:focus {
+    fill: $main-green;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
