@@ -190,11 +190,11 @@
 }
 
 .contacts__main-link {
-    position: absolute;
-    width: 260px;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 35px;
+  position: absolute;
+  width: 260px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 35px;
 
   @media (min-width: $tablet-width) {
     width: 230px;
