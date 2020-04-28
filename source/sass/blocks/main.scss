@@ -1,5 +1,6 @@
 .main {
   @media (min-width: $tablet-width) {
+    position: relative;
     margin-top: -10px;
     border-top: 24px solid;
     border-image-source: url("../img/bg-zigzag-fill.svg");
@@ -7,6 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: -20px;
     padding-top: 55px;
   }
 }
