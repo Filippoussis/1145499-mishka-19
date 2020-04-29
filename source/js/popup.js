@@ -3,7 +3,7 @@
 (function () {
   var ESC = 27;
 
-  var link = document.querySelector(".main-link--hit");
+  var cart = document.querySelectorAll(".main-link--js");
   var popup = document.querySelector(".modal--change-size");
 
   var onPopupEscPress = function (evt) {
@@ -23,6 +23,8 @@
     document.addEventListener('keydown', onPopupEscPress);
   }
 
-  link.addEventListener("click", openPopup);
+  for (var i = 0; i < cart.length; i++) {
+    cart[i].addEventListener("click", openPopup);
+  }
 
 })();
