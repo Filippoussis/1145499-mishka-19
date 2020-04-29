@@ -126,6 +126,7 @@
 
   &--order {
     align-items: center;
+
     @media (min-width: $tablet-width) {
       align-items: flex-start;
       font-size: 15px;
@@ -144,6 +145,7 @@
 
   &--catalog {
     align-items: center;
+
     @media (min-width: $tablet-width) {
       align-items: flex-start;
       font-size: 15px;
@@ -162,6 +164,7 @@
 
   &--cart {
     align-items: center;
+
     @media (min-width: $tablet-width) {
       width: 263px;
       justify-content: flex-end;
