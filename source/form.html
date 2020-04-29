@@ -121,11 +121,11 @@
               <div class="form__inner form__inner--name">
                 <label class="form__label form__label--name">
                   <span class="form__caption form__caption--name">Имя:</span>
-                  <input class="form__input form__input--name" type="text" placeholder="Введите ваше имя*">
+                  <input class="form__input form__input--name" type="text" placeholder="Введите ваше имя*" required>
                 </label>
                 <label class="form__label form__label--name">
                   <span class="form__caption form__caption--name">Фамилия:</span>
-                  <input class="form__input form__input--name" type="text" placeholder="Укажите фамилию*">
+                  <input class="form__input form__input--name" type="text" placeholder="Укажите фамилию*" required>
                 </label>
                 <label class="form__label form__label--name">
                   <span class="form__caption form__caption--name">Отчество:</span>
@@ -139,7 +139,7 @@
             <div class="form__wrapper">
               <p class="form__legend form__legend--phone">Тел</p>
               <div class="form__inner form__inner--phone">
-                <input class="form__input form__input--phone" type="tel" placeholder="+7 XXX XXX XX XX*">
+                <input class="form__input form__input--phone" type="tel" placeholder="+7 XXX XXX XX XX*" required>
                 <svg class="form__icon form__icon--phone" width="25" height="25">
                   <use xlink:href="#icon-phone"></use>
                 </svg>
@@ -151,7 +151,7 @@
             <div class="form__wrapper">
               <p class="form__legend form__legend--mail">E-mail</p>
               <div class="form__inner form__inner--mail">
-                <input class="form__input form__input--mail" type="email" placeholder="Ваш Email*">
+                <input class="form__input form__input--mail" type="email" placeholder="Ваш Email*" required>
                 <svg class="form__icon form__icon--mail" width="32" height="32">
                   <use xlink:href="#icon-mail"></use>
                 </svg>
@@ -182,24 +182,24 @@
     <footer class="footer">
       <div class="footer__wrapper">
 
-        <a class="footer__logo footer__item" href="index.html">
+        <a class="footer__logo footer__item" href="index.html" aria-label="Переход на главную страницу сайта - Мишка">
           <svg class="footer__icon-logo" width="102" height="34">
             <use xlink:href="#icon-logo"></use>
           </svg>
         </a>
 
         <div class="social footer__social footer__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="#" aria-label="Instagram">
             <svg class="social__icon" width="22" height="21">
               <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
-          <a class="social__link" href="#">
+          <a class="social__link" href="#" aria-label="Facebook">
             <svg class="social__icon" width="15" height="28">
               <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
-          <a class="social__link" href="#">
+          <a class="social__link" href="#" aria-label="Twitter">
             <svg class="social__icon" width="23" height="20">
               <use xlink:href="#icon-twitter"></use>
             </svg>
@@ -208,7 +208,7 @@
 
         <div class="web-dev footer__web-dev footer__item">
           <span class="web-dev__text">Разработано</span>
-          <a class="web-dev__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="web-dev__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на страницу интенсивов HTML Academy">
             <svg class="web-dev__icon" width="27" height="34">
               <use xlink:href="#icon-htmlacademy"></use>
             </svg>
