@@ -236,10 +236,35 @@
       </div>
     </footer>
 
+    <section class="modal modal--change-size">
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__legend">Выберите размер:</p>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="modal__form-group">
+            <label class="modal__form-label">
+              <input class="modal__form-input visually-hidden" type="radio" name="size" value="s" checked>
+              <span class="modal__form-caption">S</span>
+            </label>
+            <label class="modal__form-label">
+              <input class="modal__form-input visually-hidden" type="radio" name="size" value="m" checked>
+              <span class="modal__form-caption">M</span>
+            </label>
+            <label class="modal__form-label">
+              <input class="modal__form-input visually-hidden" type="radio" name="size" value="l" checked>
+              <span class="modal__form-caption">L</span>
+            </label>
+          </div>
+          <button class="modal__button" type="submit">Добавить</button>
+        </form>
+      </div>
+    </section>
+
     <div style="display: none">
       <include src="build/img/sprite.svg"></include>
     </div>
 
     <script src="js/nav.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>
