@@ -83,7 +83,7 @@
               <div class="products__commerc">
                 <span class="products__price">1 200 руб.</span>
                 <a class="products__cart" href="#">
-                  <svg class="products__icon-cart" width="20" height="19">
+                  <svg class="products__icon-cart main-link--js" width="20" height="19">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
                 </a>
@@ -109,7 +109,7 @@
               <p class="products__description">Диаметр 12 см, высота 10 см</p>
               <div class="products__commerc">
                 <span class="products__price">690 руб.</span>
-                <a class="products__cart" href="#">
+                <a class="products__cart main-link--js" href="#">
                   <svg class="products__icon-cart" width="20" height="19">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
@@ -136,7 +136,7 @@
               <p class="products__description">Диаметр 30 см, высота 30 см</p>
               <div class="products__commerc">
                 <span class="products__price">1 500 руб.</span>
-                <a class="products__cart" href="#">
+                <a class="products__cart main-link--js" href="#">
                   <svg class="products__icon-cart" width="20" height="19">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
@@ -212,10 +212,35 @@
       </div>
     </footer>
 
+    <section class="modal modal--change-size">
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__legend">Выберите размер:</p>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="modal__form-group">
+            <label class="modal__form-label">
+              <input class="modal__form-input visually-hidden" type="radio" name="size" value="s" checked>
+              <span class="modal__form-caption">S</span>
+            </label>
+            <label class="modal__form-label">
+              <input class="modal__form-input visually-hidden" type="radio" name="size" value="m">
+              <span class="modal__form-caption">M</span>
+            </label>
+            <label class="modal__form-label">
+              <input class="modal__form-input visually-hidden" type="radio" name="size" value="l">
+              <span class="modal__form-caption">L</span>
+            </label>
+          </div>
+          <button class="modal__button" type="submit">Добавить</button>
+        </form>
+      </div>
+    </section>
+
     <div style="display: none">
       <include src="build/img/sprite.svg"></include>
     </div>
 
     <script src="js/nav.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>
