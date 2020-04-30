@@ -142,44 +142,24 @@
 
 .contacts__map {
   margin-bottom: 35px;
-  height: 457px;
+  min-height: 457px;
 
   @media (max-width: $tablet-width-only) {
     order: 1000;
   }
 
   @media (min-width: $tablet-width) {
-    width: 768px;
     margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
     float: right;
-    width: 525px;
-  }
-}
-
-.contacts__image {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -1;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 525px;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
   }
 }
 
 .contacts__iframe {
   width: 100%;
-  height: 457px;
+  min-height: 457px;
 
   @media (min-width: $desktop-width) {
     width: 525px;
