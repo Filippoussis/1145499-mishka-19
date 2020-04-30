@@ -1,18 +1,14 @@
 .products {
   padding-top: 30px;
-  padding-bottom: 32px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
-    margin-top: -10px;
     padding-top: 65px;
     padding-bottom: 50px;
-    border-top: 24px solid;
-    border-image-source: url("../img/bg-zigzag-fill.svg");
-    border-image-slice: 100;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 120px;
+    padding-top: 125px;
     padding-bottom: 55px;
   }
 }
@@ -26,8 +22,29 @@
   }
 }
 
+.products__link {
+  display: block;
+
+  &--title {
+    color: #000000;
+
+    &:hover,
+    &:focus {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
 .products__item {
   outline: 1px solid #ececec;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -75,7 +92,7 @@
 }
 
 .products__content {
-  padding: 8px 30px 30px 25px;
+  padding: 15px 30px 30px 25px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -101,6 +118,7 @@
 }
 
 .products__description {
+  margin-bottom: 31px;
   font-size: 13px;
 
   @media (min-width: $tablet-width) {
@@ -135,6 +153,16 @@
   }
 }
 
-.products__cart-icon {
+.products__icon-cart {
   opacity: 0.2;
+}
+
+.products__cart:hover .products__icon-cart,
+.products__cart:focus .products__icon-cart {
+  fill: $main-green;
+  opacity: 1;
+}
+
+.products__cart:active .products__icon-cart {
+  opacity: 0.3;
 }

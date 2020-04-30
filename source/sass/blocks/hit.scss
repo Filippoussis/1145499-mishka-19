@@ -6,9 +6,6 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 50px;
     padding-top: 33px;
-    border-top: 24px solid;
-    border-image-source: url("../img/bg-zigzag-fill.svg");
-    border-image-slice: 100;
 
     &::after {
       content: "";
@@ -18,7 +15,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 40px;
+    padding-top: 50px;
     padding-bottom: 70px;
     border-top-width: 34px;
   }
@@ -44,7 +41,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 110px;
+    top: 120px;
     margin-left: 48px;
   }
 }

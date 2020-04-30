@@ -33,6 +33,19 @@
   @media (max-width: $mobile-width-only) {
     display: none;
   }
+
+  &:hover,
+  &:focus {
+    .footer__icon-logo {
+      fill: $main-green;
+    }
+  }
+
+  &:active {
+    .footer__icon-logo {
+      opacity: 0.3;
+    }
+  }
 }
 
 .footer__social {
