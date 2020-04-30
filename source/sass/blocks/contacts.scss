@@ -149,11 +149,13 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 768px;
     margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
     float: right;
+    width: 525px;
   }
 }
 
