@@ -3,7 +3,7 @@
 (function () {
   var ESC = 27;
 
-  var cart = document.querySelectorAll(".products__cart-link");
+  var cart = document.querySelectorAll(".products__cart");
   var popup = document.querySelector(".modal--change-size");
 
   var onPopupEscPress = function (evt) {
